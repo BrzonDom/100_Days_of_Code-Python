@@ -36,8 +36,10 @@ Type Error, Checking and Conversion
 
 len("12345")
 
-print("String")
-print(f"\t{type('String')}")
+String = "String"
+
+print(String)
+print(f"\t{type(String)}")
 
 
 """__Output__"""
