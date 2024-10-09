@@ -42,8 +42,15 @@ print(f"\t2.Num.: {it_nm2}")
 print(f"\tSum:    {it_nm1} + {it_nm2} = {it_nm1 + it_nm2}")
 print()
 
-print("Large integers:")
+print("Large integer numbers:")
 print(f"\t123_456_789 = {123_456_789}")
+print()
+
+print(3.1415)
+print(1.0)
+print(1.)
+print(-1.0)
+print(0.0)
 
 
 """__Output__"""
@@ -67,8 +74,14 @@ Integer numbers:
 	2.Num.: 876
 	Sum:    124 + 876 = 1000
 
-Large integers:
+Large integer numbers:
 	123_456_789 = 123456789
+
+3.1415
+1.0
+1.0
+-1.0
+0.0
 
 Process finished with exit code 0
 """
