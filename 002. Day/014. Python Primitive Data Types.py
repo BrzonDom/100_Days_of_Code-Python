@@ -24,14 +24,20 @@ for idx in range(ln_wrd):
     print(f"\t{idx}.: {wrd[idx]} | {wrd[-(idx+1)]}")
 print()
 
-print("124")
-print("876")
-print("124" + "876")
+st_nm1 = "124"
+st_nm2 = "876"
+
+print(st_nm1)
+print(st_nm2)
+print(st_nm1 + st_nm2)
 print()
 
-print(124)
-print(876)
-print(124 + 876)
+it_nm1 = 124
+it_nm2 = 876
+
+print(it_nm1)
+print(it_nm2)
+print(it_nm1 + it_nm2)
 
 
 """__Output__"""
