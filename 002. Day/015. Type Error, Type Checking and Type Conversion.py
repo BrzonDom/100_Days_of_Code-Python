@@ -53,10 +53,10 @@ print(f"\t{Boolean}")
 print(f"\t\t{type(Boolean)}")
 print()
 
-str()
-int()
-float()
-bool()
+print(str(1))
+print(int("1"))
+print(float(1))
+print(bool(1))
 
 
 """__Output__"""
@@ -72,6 +72,10 @@ Data types:
 	True
 		<class 'bool'>
 
+1
+1
+1.0
+True
 
 Process finished with exit code 0
 """
