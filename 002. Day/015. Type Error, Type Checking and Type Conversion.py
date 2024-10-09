@@ -37,13 +37,20 @@ Type Error, Checking and Conversion
 len("12345")
 
 String = "String"
+Integer = 123
 
 print(String)
 print(f"\t{type(String)}")
+print(Integer)
+print(f"\t{type(Integer)}")
 
 
 """__Output__"""
 """
 String
 	<class 'str'>
+123
+	<class 'int'>
+
+Process finished with exit code 0
 """
