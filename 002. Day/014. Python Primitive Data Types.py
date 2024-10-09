@@ -11,5 +11,8 @@ Data Types
 """
 
 
-print("Hello")
-print(len("Hello"))
+wrd = "Hello"
+ln_wrd = len(wrd)
+
+print(wrd)
+print(ln_wrd)
