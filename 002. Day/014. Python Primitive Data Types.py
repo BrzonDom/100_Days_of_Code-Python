@@ -10,4 +10,6 @@ Data Types
 
 """
 
-len("Hello")
+
+print("Hello")
+print(len("Hello"))
