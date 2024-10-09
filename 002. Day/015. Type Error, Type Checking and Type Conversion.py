@@ -34,20 +34,21 @@ Type Error, Checking and Conversion
 
 """__Code__"""
 
-len("12345")
+print("Data types: \n")
 
 String = "String"
-Integer = 123
-Float = 3.141
-Boolean = True
-
-print("Data types: \n")
 print(f"\t{String}")
 print(f"\t\t{type(String)}")
+
+Integer = 123
 print(f"\t{Integer}")
 print(f"\t\t{type(Integer)}")
+
+Float = 3.141
 print(f"\t{Float}")
 print(f"\t\t{type(Float)}")
+
+Boolean = True
 print(f"\t{Boolean}")
 print(f"\t\t{type(Boolean)}")
 
