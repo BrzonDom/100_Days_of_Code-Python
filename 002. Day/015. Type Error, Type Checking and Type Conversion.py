@@ -41,26 +41,29 @@ Integer = 123
 Float = 3.141
 Boolean = True
 
-print(String)
-print(f"\t{type(String)}")
-print(Integer)
-print(f"\t{type(Integer)}")
-print(Float)
-print(f"\t{type(Float)}")
-print(Boolean)
-print(f"\t{type(Boolean)}")
+print("Data types: \n")
+print(f"\t{String}")
+print(f"\t\t{type(String)}")
+print(f"\t{Integer}")
+print(f"\t\t{type(Integer)}")
+print(f"\t{Float}")
+print(f"\t\t{type(Float)}")
+print(f"\t{Boolean}")
+print(f"\t\t{type(Boolean)}")
 
 
 """__Output__"""
 """
-String
-	<class 'str'>
-123
-	<class 'int'>
-3.141
-	<class 'float'>
-True
-	<class 'bool'>
+Data types: 
+
+	String
+		<class 'str'>
+	123
+		<class 'int'>
+	3.141
+		<class 'float'>
+	True
+		<class 'bool'>
 
 Process finished with exit code 0
 """
