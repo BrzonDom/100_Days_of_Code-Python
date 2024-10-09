@@ -22,8 +22,11 @@ print()
 
 for idx in range(ln_wrd):
     print(f"\t{idx}.: {wrd[idx]} | {wrd[-(idx+1)]}")
+print()
 
-
+print("124")
+print("876")
+print("124" + "876")
 
 
 """__Output__"""
@@ -36,6 +39,10 @@ Word: Hello
 	2.: l | l
 	3.: l | e
 	4.: o | H
+	
+124
+876
+124876
 
 Process finished with exit code 0
 """
