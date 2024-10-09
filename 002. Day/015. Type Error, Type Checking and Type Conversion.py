@@ -39,6 +39,7 @@ len("12345")
 String = "String"
 Integer = 123
 Float = 3.141
+Boolean = True
 
 print(String)
 print(f"\t{type(String)}")
@@ -46,6 +47,8 @@ print(Integer)
 print(f"\t{type(Integer)}")
 print(Float)
 print(f"\t{type(Float)}")
+print(Boolean)
+print(f"\t{type(Boolean)}")
 
 
 """__Output__"""
@@ -56,6 +59,8 @@ String
 	<class 'int'>
 3.141
 	<class 'float'>
+True
+	<class 'bool'>
 
 Process finished with exit code 0
 """
