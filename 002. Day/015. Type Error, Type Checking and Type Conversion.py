@@ -32,4 +32,17 @@ Type Error, Checking and Conversion
 """
 
 
+"""__Code__"""
+
 len(12345)
+
+
+"""__Output__"""
+"""
+Traceback (most recent call last):
+  File "D:\Work\Programming\Python\100 Days of Code - Python\002. Day\015. Type Error, Type Checking and Type Conversion.py", line 37, in <module>
+    len(12345)
+TypeError: object of type 'int' has no len()
+
+Process finished with exit code 1
+"""
