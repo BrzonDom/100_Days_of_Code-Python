@@ -54,8 +54,9 @@ print(f"\t{-1.0}")
 print(f"\t{0.}")
 print()
 
-print(True)
-print(False)
+print("Booleans")
+print(f"\t{True}")
+print(f"\t{False}")
 
 
 """__Output__"""
@@ -89,8 +90,9 @@ Float numbers:
 	-1.0
 	0.0
 
-True
-False
+Booleans
+	True
+	False
 
 Process finished with exit code 0
 """
