@@ -14,5 +14,5 @@ Data Types
 wrd = "Hello"
 ln_wrd = len(wrd)
 
-print(wrd)
-print(ln_wrd)
+print(f"Word: {wrd}")
+print(f"\tWord length:{ln_wrd}")
