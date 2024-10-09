@@ -27,17 +27,19 @@ print()
 st_nm1 = "124"
 st_nm2 = "876"
 
-print(st_nm1)
-print(st_nm2)
-print(st_nm1 + st_nm2)
+print("String numbers::")
+print(f"\t1.Num.: {st_nm1}")
+print(f"\t2.Num.: {st_nm2}")
+print(f"\tSum:    {st_nm1} + {st_nm2} = {st_nm1 + st_nm2}")
 print()
 
 it_nm1 = 124
 it_nm2 = 876
 
-print(it_nm1)
-print(it_nm2)
-print(it_nm1 + it_nm2)
+print("Integer numbers:")
+print(f"\t1.Num.: {it_nm1}")
+print(f"\t2.Num.: {it_nm2}")
+print(f"\tSum:    {it_nm1} + {it_nm2} = {it_nm1 + it_nm2}")
 
 
 """__Output__"""
@@ -51,13 +53,15 @@ Word: Hello
 	3.: l | e
 	4.: o | H
 	
-124
-876
-124876
+String numbers::
+	1.Num.: 124
+	2.Num.: 876
+	Sum:    124 + 876 = 124876
 
-124
-876
-1000
+Integer numbers:
+	1.Num.: 124
+	2.Num.: 876
+	Sum:    124 + 876 = 1000
 
 Process finished with exit code 0
 """
