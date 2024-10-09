@@ -40,6 +40,9 @@ print("Integer numbers:")
 print(f"\t1.Num.: {it_nm1}")
 print(f"\t2.Num.: {it_nm2}")
 print(f"\tSum:    {it_nm1} + {it_nm2} = {it_nm1 + it_nm2}")
+print()
+
+print(123_456_789)
 
 
 """__Output__"""
@@ -62,6 +65,8 @@ Integer numbers:
 	1.Num.: 124
 	2.Num.: 876
 	Sum:    124 + 876 = 1000
+
+123456789
 
 Process finished with exit code 0
 """
