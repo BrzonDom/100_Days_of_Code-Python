@@ -21,7 +21,9 @@ print(f"\tWord length:{ln_wrd}")
 print()
 
 for idx in range(ln_wrd):
-    print(f"\t{idx}.: {wrd[idx]}")
+    print(f"\t{idx}.: {wrd[idx]} | {wrd[-(idx+1)]}")
+
+
 
 
 """__Output__"""
@@ -29,11 +31,11 @@ for idx in range(ln_wrd):
 Word: Hello
 	Word length:5
 
-	0.: H
-	1.: e
-	2.: l
-	3.: l
-	4.: o
+	0.: H | o
+	1.: e | l
+	2.: l | l
+	3.: l | e
+	4.: o | H
 
 Process finished with exit code 0
 """
