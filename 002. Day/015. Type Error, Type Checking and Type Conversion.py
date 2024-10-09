@@ -38,11 +38,14 @@ len("12345")
 
 String = "String"
 Integer = 123
+Float = 3.141
 
 print(String)
 print(f"\t{type(String)}")
 print(Integer)
 print(f"\t{type(Integer)}")
+print(Float)
+print(f"\t{type(Float)}")
 
 
 """__Output__"""
@@ -51,6 +54,8 @@ String
 	<class 'str'>
 123
 	<class 'int'>
+3.141
+	<class 'float'>
 
 Process finished with exit code 0
 """
