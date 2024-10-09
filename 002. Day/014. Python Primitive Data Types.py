@@ -27,6 +27,11 @@ print()
 print("124")
 print("876")
 print("124" + "876")
+print()
+
+print(124)
+print(876)
+print(124 + 876)
 
 
 """__Output__"""
@@ -43,6 +48,10 @@ Word: Hello
 124
 876
 124876
+
+124
+876
+1000
 
 Process finished with exit code 0
 """
