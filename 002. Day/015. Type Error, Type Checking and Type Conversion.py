@@ -51,6 +51,12 @@ print(f"\t\t{type(Float)}")
 Boolean = True
 print(f"\t{Boolean}")
 print(f"\t\t{type(Boolean)}")
+print()
+
+str()
+int()
+float()
+bool()
 
 
 """__Output__"""
@@ -65,6 +71,7 @@ Data types:
 		<class 'float'>
 	True
 		<class 'bool'>
+
 
 Process finished with exit code 0
 """
