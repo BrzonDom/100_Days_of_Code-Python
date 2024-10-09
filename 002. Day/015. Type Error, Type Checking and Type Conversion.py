@@ -51,12 +51,13 @@ print(f"\t\t{type(Float)}")
 Boolean = True
 print(f"\t{Boolean}")
 print(f"\t\t{type(Boolean)}")
-print()
+print("\n")
 
-print(str(1))
-print(int("1"))
-print(float(1))
-print(bool(1))
+print("Type conversion: \n")
+print(f"\t{str(1)}")
+print(f"\t{int('1')}")
+print(f"\t{float(1)}")
+print(f"\t{bool(1)}")
 
 
 """__Output__"""
@@ -72,10 +73,13 @@ Data types:
 	True
 		<class 'bool'>
 
-1
-1
-1.0
-True
+
+Type conversion: 
+
+	1
+	1
+	1.0
+	True
 
 Process finished with exit code 0
 """
