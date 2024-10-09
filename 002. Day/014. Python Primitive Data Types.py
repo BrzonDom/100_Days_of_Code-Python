@@ -46,11 +46,12 @@ print("Large integer numbers:")
 print(f"\t123_456_789 = {123_456_789}")
 print()
 
-print(3.1415)
-print(1.0)
-print(1.)
-print(-1.0)
-print(0.0)
+print("Float numbers:")
+print(f"\t{3.1415}")
+print(f"\t{1.0}")
+print(f"\t{1.}")
+print(f"\t{-1.0}")
+print(f"\t{0.}")
 
 
 """__Output__"""
@@ -77,11 +78,12 @@ Integer numbers:
 Large integer numbers:
 	123_456_789 = 123456789
 
-3.1415
-1.0
-1.0
--1.0
-0.0
+Float numbers:
+	3.1415
+	1.0
+	1.0
+	-1.0
+	0.0
 
 Process finished with exit code 0
 """
