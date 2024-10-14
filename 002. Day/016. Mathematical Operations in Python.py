@@ -1,15 +1,17 @@
 """
-Basic Operators
-Learn to use the basic mathematical operators, +, -, *, /, // and **
+Mathematical Operations
 
-PEMDAS
-Parentheses, Exponents, Multiplication/Division, Addition/Subtraction
+    Basic Operators
+        Learn to use the basic mathematical operators, +, -, *, /, // and **
 
-PAUSE 1. What is the output of this code?
-print(3 * 3 + 3 / 3 - 3)
+    PEMDAS
+        Parentheses, Exponents, Multiplication/Division, Addition/Subtraction
 
-PAUSE 2. Change the code so it outputs 3?
-print(3 * 3 + 3 / 3 - 3)
+        PAUSE 1. What is the output of this code?
+            print(3 * 3 + 3 / 3 - 3)
+
+        PAUSE 2. Change the code so it outputs 3?
+            print(3 * 3 + 3 / 3 - 3)
 
 """
 
