@@ -1,20 +1,24 @@
 """
-We're going to build a tip calculator.
+  2. Project - Tip Calculator
 
-If the bill was $150.00, split between 5 people, with 12% tip.
+    We're going to build a tip calculator.
 
-Each person should pay:
+    If the bill was $150.00, split between 5 people, with 12% tip.
 
-(150.00 / 5) * 1.12 = 33.6
+    Each person should pay:
 
-After formatting the result to 2 decimal places = 33.60
+        (150.00 / 5) * 1.12 = 33.6
 
-https://appbrewery.github.io/python-day2-demo/
+    After formatting the result to 2 decimal places = 33.60
 
-Very Optional Reading: Floating Point Arithmetic
-https://docs.python.org/3/tutorial/floatingpoint.html
+    Demo:
+        https://appbrewery.github.io/python-day2-demo/
+
+    Very Optional Reading: Floating Point Arithmetic
+        https://docs.python.org/3/tutorial/floatingpoint.html
 
 """
+
 
 print("Welcome to the tip calculator!")
 bill = float(input("What was the total bill? $"))
