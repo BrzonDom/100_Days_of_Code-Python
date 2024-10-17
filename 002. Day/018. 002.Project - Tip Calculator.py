@@ -29,6 +29,5 @@ print()
 
 total = bill * (1 + tip * 0.01)
 print(f"Total: {total:.2f}")
-part = total / people
-part = round(part, 2)
+part = round(total / people, 2)
 print(f"Part: {part:.2f}")
