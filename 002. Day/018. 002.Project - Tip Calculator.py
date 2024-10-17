@@ -28,6 +28,6 @@ people = int(input("How many people to split the bill? "))
 print()
 
 total = bill * (1 + tip * 0.01)
-print(f"Total: {total:.2f}")
 part = round(total / people, 2)
-print(f"Part: {part:.2f}")
+
+print(f"Total per person: {part:.2f}")
