@@ -36,10 +36,10 @@ print("What percentage tip would you like to give? 10 12 15 ")
 print(tip)
 print("How many people to split the bill? ")
 print(people)
+print()
 
 total = bill * (1 + tip * 0.01)
-print(total)
+print(f"Total: {total}")
 part = total / people
-print(part)
 part = round(part, 2)
-print(part)
+print(f"Part: {part}")
