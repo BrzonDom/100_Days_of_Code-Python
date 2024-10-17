@@ -39,7 +39,7 @@ print(people)
 print()
 
 total = bill * (1 + tip * 0.01)
-print(f"Total: {total}")
+print(f"Total: {total:.2f}")
 part = total / people
 part = round(part, 2)
-print(f"Part: {part}")
+print(f"Part: {part:.2f}")
