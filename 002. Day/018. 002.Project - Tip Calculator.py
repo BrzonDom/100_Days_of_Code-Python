@@ -39,3 +39,5 @@ print(people)
 
 total = bill * (1 + tip * 0.01)
 print(total)
+part = total / people
+print(part)
