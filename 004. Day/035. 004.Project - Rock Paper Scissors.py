@@ -19,6 +19,10 @@ rock = '''
 ---.__(___)
 '''
 
+print("Rock:")
+print(rock)
+print()
+
 paper = '''
     _______
 ---'   ____)____
@@ -28,6 +32,10 @@ paper = '''
 ---.__________)
 '''
 
+print("Paper:")
+print(paper)
+print()
+
 scissors = '''
     _______
 ---'   ____)____
@@ -36,3 +44,6 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+
+print("Scissors:")
+print(scissors)
