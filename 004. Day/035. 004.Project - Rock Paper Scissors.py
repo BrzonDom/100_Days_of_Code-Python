@@ -47,3 +47,8 @@ scissors = '''
 
 print("Scissors:")
 print(scissors)
+
+options = {0: rock,
+           1: paper,
+           2: scissors}
+
