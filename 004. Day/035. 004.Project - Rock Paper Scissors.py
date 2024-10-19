@@ -52,5 +52,6 @@ options_beats = {0: 2,
 
 for opt in range(3):
 
-    print(options_word[opt])
+    print(f"{options_word[opt]}:")
     print(options_print[opt])
+    print()
