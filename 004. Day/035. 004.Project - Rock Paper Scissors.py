@@ -49,3 +49,8 @@ options_print = {0: rock,
 options_beats = {0: 2,
                  1: 0,
                  2: 1}
+
+for opt in range(3):
+
+    print(options_word[opt])
+    print(options_print[opt])
