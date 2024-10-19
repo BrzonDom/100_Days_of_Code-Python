@@ -19,10 +19,6 @@ rock = '''
 ---.__(___)
 '''
 
-print("Rock:")
-print(rock)
-print()
-
 paper = '''
     _______
 ---'   ____)____
@@ -31,10 +27,6 @@ paper = '''
          _______)
 ---.__________)
 '''
-
-print("Paper:")
-print(paper)
-print()
 
 scissors = '''
     _______
@@ -45,16 +37,14 @@ scissors = '''
 ---.__(___)
 '''
 
-print("Scissors:")
-print(scissors)
-
-options_print = {0: rock,
-                 1: paper,
-                 2: scissors}
 
 options_word = {0: "Rock",
                 1: "Paper",
                 2: "Scissors"}
+
+options_print = {0: rock,
+                 1: paper,
+                 2: scissors}
 
 options_beats = {0: 2,
                  1: 0,
