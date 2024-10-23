@@ -71,9 +71,9 @@ print("How many numbers would you like?")
 print(nr_numbers)
 print()
 
-print(f"Number of Letters: {nr_letters}")
-print(f"Number of Symbols: {nr_symbols}")
-print(f"Number of Numbers: {nr_numbers}")
+print(f"\tNumber of Letters: {nr_letters}")
+print(f"\tNumber of Symbols: {nr_symbols}")
+print(f"\tNumber of Numbers: {nr_numbers}")
 print()
 
 ps_letters = []
@@ -92,8 +92,10 @@ for crc in range(nr_numbers):
     rn_number = random.choice(numbers)
     ps_numbers.append(rn_number)
 
-print(f"Password of Letters: {ps_letters}")
-print(f"Password of Symbols: {ps_symbols}")
-print(f"Password of Numbers: {ps_numbers}")
+print(f"\tPassword of Letters: {ps_letters}")
+print(f"\tPassword of Symbols: {ps_symbols}")
+print(f"\tPassword of Numbers: {ps_numbers}")
+print()
 
 or_password = ps_letters + ps_symbols + ps_numbers
+print(f"Ordered password: {or_password}")
