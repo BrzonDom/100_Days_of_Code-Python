@@ -7,6 +7,8 @@ print(chosen_word)
 placeholder = ""
 for idx in range(len(chosen_word)):
     placeholder += '_'
+print(placeholder)
+print()
 
 guess = input("Guess a letter: ").lower()
 
