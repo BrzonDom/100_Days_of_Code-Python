@@ -75,15 +75,18 @@ print(f"Letters: {nr_letters}")
 print(f"Symbols: {nr_symbols}")
 print(f"Numbers: {nr_numbers}")
 
-ps_letters = ""
-ps_symbols = ""
-ps_numbers = ""
+ps_letters = []
+ps_symbols = []
+ps_numbers = []
 
 for crc in range(nr_letters):
     rn_letter = random.choice(letters)
+    ps_letters.append(rn_letter)
 
 for crc in range(nr_symbols):
     rn_symbol = random.choice(symbols)
+    ps_symbols.append(rn_symbol)
 
 for crc in range(nr_numbers):
     rn_number = random.choice(numbers)
+    ps_numbers.append(rn_number)
