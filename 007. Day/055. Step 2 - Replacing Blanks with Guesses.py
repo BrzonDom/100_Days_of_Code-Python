@@ -4,8 +4,6 @@ word_list = ["aardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
 print(chosen_word)
 
-# TODO-1: Create a "placeholder" with the same number of blanks as the chosen_word
-
 placeholder = ""
 for idx in range(len(chosen_word)):
     placeholder += '_'
