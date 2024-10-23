@@ -95,3 +95,5 @@ for crc in range(nr_numbers):
 print(f"Password of Letters: {ps_letters}")
 print(f"Password of Symbols: {ps_symbols}")
 print(f"Password of Numbers: {ps_numbers}")
+
+or_password = ps_letters + ps_symbols + ps_numbers
