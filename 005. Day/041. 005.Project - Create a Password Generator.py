@@ -74,3 +74,7 @@ print()
 print(f"Letters: {nr_letters}")
 print(f"Symbols: {nr_symbols}")
 print(f"Numbers: {nr_numbers}")
+
+ps_letters = ""
+ps_symbols = ""
+ps_numbers = ""
