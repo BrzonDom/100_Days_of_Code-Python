@@ -10,8 +10,6 @@ for position in range(word_length):
     placeholder += "_"
 print(placeholder)
 
-# TODO-1: - Use a while loop to let the user guess again.
-
 game_over = False
 
 while not game_over:
