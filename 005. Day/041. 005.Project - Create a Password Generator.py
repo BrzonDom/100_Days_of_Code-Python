@@ -61,5 +61,11 @@ print("Welcome to the PyPassword Generator!")
 # nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 nr_letters = 6
+print("How many letters would you like in your password?")
+print(nr_letters)
 nr_symbols = 2
+print("How many symbols would you like?")
+print(nr_symbols)
 nr_numbers = 4
+print("How many numbers would you like?")
+print(nr_numbers)
