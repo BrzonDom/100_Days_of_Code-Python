@@ -80,4 +80,10 @@ ps_symbols = ""
 ps_numbers = ""
 
 for crc in range(nr_letters):
-    rn_character = random.choice(letters)
+    rn_letter = random.choice(letters)
+
+for crc in range(nr_symbols):
+    rn_symbol = random.choice(symbols)
+
+for crc in range(nr_numbers):
+    rn_number = random.choice(numbers)
