@@ -12,6 +12,7 @@ print(placeholder)
 print()
 
 guess = input("Guess a letter: ").lower()
+print()
 
 display = ""
 
@@ -21,3 +22,5 @@ for letter in chosen_word:
 
     else:
         display += '_'
+
+print(display)
