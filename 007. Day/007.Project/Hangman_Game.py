@@ -16,9 +16,9 @@ guess = input("Enter your guess: ").lower()
 print()
 
 if guess in word:
-    for crc in word:
+    for idx, crc in enumerate(word):
         if guess == crc:
-            print("Right")
+            print(f"{idx+1}. Right")
 
 else:
     print("Wrong")
