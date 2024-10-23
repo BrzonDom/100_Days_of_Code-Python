@@ -100,5 +100,8 @@ print()
 password = ps_letters + ps_symbols + ps_numbers
 print(f"Ordered password: {password}")
 print(f"Ordered password: {''.join(password)}")
+print()
 
 random.shuffle(password)
+print(f"Shuffled password: {password}")
+print(f"Shuffled password: {''.join(password)}")
