@@ -8,6 +8,8 @@ word_list = ["aardvark", "baboon", "camel"]
 
 word = random.choice(word_list)
 
+placeholder = "_" * len(word)
+
 print(f"Word: {word}")
 print()
 
