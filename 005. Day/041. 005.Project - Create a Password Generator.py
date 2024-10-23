@@ -46,7 +46,7 @@
             Try googling: "How to shuffle items in a List in Python"
 
 """
-
+import random
 
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
            'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
@@ -78,3 +78,6 @@ print(f"Numbers: {nr_numbers}")
 ps_letters = ""
 ps_symbols = ""
 ps_numbers = ""
+
+for crc in range(nr_letters):
+    rn_character = random.choice(letters)
