@@ -5,9 +5,7 @@ word_list = ["aardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
 print(chosen_word)
 
-placeholder = ""
-for idx in range(len(chosen_word)):
-    placeholder += '_'
+placeholder = "_" * len(chosen_word)
 print(placeholder)
 print()
 
