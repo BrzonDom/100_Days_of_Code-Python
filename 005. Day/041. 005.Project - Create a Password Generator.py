@@ -97,5 +97,6 @@ print(f"\tPassword of Symbols: {ps_symbols}")
 print(f"\tPassword of Numbers: {ps_numbers}")
 print()
 
-or_password = ps_letters + ps_symbols + ps_numbers
-print(f"Ordered password: {or_password}")
+password = ps_letters + ps_symbols + ps_numbers
+print(f"Ordered password: {password}")
+print(f"Ordered password: {''.join(password)}")
