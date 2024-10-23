@@ -14,19 +14,21 @@ print(placeholder)
 
 game_over = False
 
-guess = input("Guess a letter: ").lower()
+while not game_over:
 
-display = ""
+    guess = input("Guess a letter: ").lower()
 
-# TODO-2: Change the for loop so that you keep the previous correct letters in display.
+    display = ""
 
-for letter in chosen_word:
-    if letter == guess:
-        display += letter
-    else:
-        display += "_"
+    # TODO-2: Change the for loop so that you keep the previous correct letters in display.
 
-print(display)
+    for letter in chosen_word:
+        if letter == guess:
+            display += letter
+        else:
+            display += "_"
 
-if "_" not in display:
-    game_over = True
+    print(display)
+
+    if "_" not in display:
+        game_over = True
