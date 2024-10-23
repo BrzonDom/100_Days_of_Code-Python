@@ -10,3 +10,5 @@ import random
 word_list = ["aardvark", "baboon", "camel"]
 
 word = random.choice(word_list)
+
+print(f"Word: {word}")
