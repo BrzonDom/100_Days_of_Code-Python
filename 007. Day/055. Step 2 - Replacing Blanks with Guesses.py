@@ -13,8 +13,6 @@ print()
 
 guess = input("Guess a letter: ").lower()
 
-# TODO-2: Create a "display" that puts the guess letter in the right positions and _ in the rest of the string.
-
 display = ""
 
 for letter in chosen_word:
