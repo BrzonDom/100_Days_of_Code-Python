@@ -12,6 +12,8 @@ print(placeholder)
 
 # TODO-1: - Use a while loop to let the user guess again.
 
+game_over = False
+
 guess = input("Guess a letter: ").lower()
 
 display = ""
@@ -25,3 +27,6 @@ for letter in chosen_word:
         display += "_"
 
 print(display)
+
+if "_" not in display:
+    game_over = True
