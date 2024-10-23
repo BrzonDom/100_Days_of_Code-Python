@@ -11,9 +11,10 @@ print(f"Word: {word}")
 print()
 
 guess = input("Enter your guess: ").lower()
+print()
 
 if guess in word:
-    print(True)
+    print("Right")
 
 else:
-    print(False)
+    print("Wrong")
