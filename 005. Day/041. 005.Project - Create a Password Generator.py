@@ -69,3 +69,8 @@ print(nr_symbols)
 nr_numbers = 4
 print("How many numbers would you like?")
 print(nr_numbers)
+print()
+
+print(f"Letters: {nr_letters}")
+print(f"Symbols: {nr_symbols}")
+print(f"Numbers: {nr_numbers}")
