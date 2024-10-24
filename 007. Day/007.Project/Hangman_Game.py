@@ -18,6 +18,8 @@ word_len = len(word)
 
 display = "_" * word_len
 
+lives = 6
+
 print(f"Word: {word}")
 print()
 
