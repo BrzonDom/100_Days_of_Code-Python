@@ -6,7 +6,8 @@ import random
 
 word_list = ["aardvark", "baboon", "camel"]
 
-word = random.choice(word_list)
+# word = random.choice(word_list)
+word = word_list[1]
 word_len = len(word)
 
 display = "_" * word_len
