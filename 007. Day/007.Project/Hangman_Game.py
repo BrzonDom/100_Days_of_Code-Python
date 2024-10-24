@@ -37,7 +37,8 @@ while display != word and lives:
 
         print("\tWrong guess")
         print(f"Lives: {lives}")
-        print()
+
+        print(stages[lives])
 
 if not lives:
     print("You LOSE")
