@@ -21,6 +21,7 @@ if guess in word:
             print(f"{idx+1}. Right")
 
             print(display[:idx] + guess + display[idx + 1:])
+            display = display[:idx] + guess + display[idx + 1:]
 
 else:
     print("Wrong")
