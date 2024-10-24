@@ -20,7 +20,7 @@ lives = 6
 print(f"Word: {word}")
 print()
 
-while display != word:
+while display != word and lives:
 
     guess = input("Enter your guess: ").lower()
     print()
@@ -37,3 +37,5 @@ while display != word:
     else:
         print("\tWrong guess")
         print()
+
+        lives -= 1
