@@ -21,10 +21,12 @@ while display != word:
     if guess in word:
         for idx, crc in enumerate(word):
             if guess == crc:
-                print(f"{idx+1}. Right")
-
-                print(display[:idx] + guess + display[idx + 1:])
                 display = display[:idx] + guess + display[idx + 1:]
 
+        print("\tRight guess")
+        print(display)
+        print()
+
     else:
-        print("Wrong")
+        print("\tWrong guess")
+        print()
