@@ -41,4 +41,7 @@ while display != word and lives:
         lives -= 1
 
 if not lives:
-    print("You LOST")
+    print("You LOSE")
+
+elif display == word:
+    print("You WIN")
