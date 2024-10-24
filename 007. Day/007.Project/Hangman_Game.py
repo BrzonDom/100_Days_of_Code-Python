@@ -13,8 +13,10 @@ from Hangman_Art import stages, logo
 #  e.g. You guessed d, that's not in the word. You lose a life.
 
 # TODO-6: - Update the code below to tell the user how many lives they have left.
+# print("****************************<???>/6 LIVES LEFT****************************")
 
 # TODO 7: - Update the print statement below to give the user the correct word they were trying to guess.
+# print(f"***********************YOU LOSE**********************")
 
 print(logo)
 print()
