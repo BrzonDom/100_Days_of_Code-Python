@@ -39,3 +39,6 @@ while display != word and lives:
         print()
 
         lives -= 1
+
+if not lives:
+    print("You LOST")
