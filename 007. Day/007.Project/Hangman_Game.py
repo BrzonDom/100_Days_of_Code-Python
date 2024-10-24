@@ -1,7 +1,5 @@
 import random
 
-# TODO-2: Change the for loop so that you keep the previous correct letters in display.
-
 word_list = ["aardvark", "baboon", "camel"]
 
 # word = random.choice(word_list)
