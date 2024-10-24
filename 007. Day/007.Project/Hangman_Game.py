@@ -53,7 +53,7 @@ while display != word and lives:
         print(f"****************************{lives}/6 LIVES LEFT****************************")
 
 if not lives:
-    print("You LOSE")
+    print("***********************YOU LOSE**********************")
 
 elif display == word:
-    print("You WIN")
+    print("***********************YOU LOSE**********************")
