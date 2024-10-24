@@ -1,9 +1,11 @@
 import random
-from Hangman_Art import stages
+from Hangman_Art import stages, logo
 
 # TODO-3: - print the ASCII art from 'stages'
 #  that corresponds to the current number of 'lives' the user has remaining.
 
+print(logo)
+print()
 
 word_list = ["aardvark", "baboon", "camel"]
 
