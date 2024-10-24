@@ -35,10 +35,11 @@ while display != word and lives:
         print()
 
     else:
-        print("\tWrong guess")
-        print()
-
         lives -= 1
+
+        print("\tWrong guess")
+        print(f"Lives: {lives}")
+        print()
 
 if not lives:
     print("You LOSE")
