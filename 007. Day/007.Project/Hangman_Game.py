@@ -14,16 +14,18 @@ display = "_" * word_len
 print(f"Word: {word}")
 print()
 
-guess = input("Enter your guess: ").lower()
-print()
+while display != word:
 
-if guess in word:
-    for idx, crc in enumerate(word):
-        if guess == crc:
-            print(f"{idx+1}. Right")
+    guess = input("Enter your guess: ").lower()
+    print()
 
-            print(display[:idx] + guess + display[idx + 1:])
-            display = display[:idx] + guess + display[idx + 1:]
+    if guess in word:
+        for idx, crc in enumerate(word):
+            if guess == crc:
+                print(f"{idx+1}. Right")
 
-else:
-    print("Wrong")
+                print(display[:idx] + guess + display[idx + 1:])
+                display = display[:idx] + guess + display[idx + 1:]
+
+    else:
+        print("Wrong")
