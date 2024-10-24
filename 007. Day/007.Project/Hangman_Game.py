@@ -1,7 +1,5 @@
 import random
 
-# TODO-1: - Use a while loop to let the user guess again.
-
 # TODO-2: Change the for loop so that you keep the previous correct letters in display.
 
 word_list = ["aardvark", "baboon", "camel"]
