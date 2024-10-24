@@ -3,8 +3,6 @@ from Hangman_Art import stages, logo
 
 # TODO-1: - Update the word list to use the 'word_list' from hangman_words.py
 
-# TODO-2: - Update the code below to use the stages List from the file hangman_art.py
-
 # TODO-3: - Import the logo from hangman_art.py and print it at the start of the game.
 
 # TODO-4: - If the user has entered a letter they've already guessed, print the letter and let them know.
