@@ -8,8 +8,6 @@ from Hangman_Art import stages, logo
 # TODO-5: - If the letter is not in the chosen_word, print out the letter and let them know it's not in the word.
 #  e.g. You guessed d, that's not in the word. You lose a life.
 
-# TODO 7: - Update the print statement below to give the user the correct word they were trying to guess.
-# print(f"***********************YOU LOSE**********************")
 
 print(logo)
 print()
