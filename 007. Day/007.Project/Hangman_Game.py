@@ -20,12 +20,15 @@ word_len = len(word)
 
 display = "_" * word_len
 
-lives = 6
+lives = lives_max = 6
 
 print(f"Word: {word}")
 print()
 
 while display != word and lives:
+
+    print(f"****************************{lives}/{lives_max} LIVES LEFT****************************")
+    print()
 
     guess = input("Enter your guess: ").lower()
     print()
@@ -45,7 +48,6 @@ while display != word and lives:
         print("\tWrong guess")
 
         print(stages[lives])
-        print(f"****************************{lives}/6 LIVES LEFT****************************")
 
 if not lives:
     print("***********************YOU LOSE**********************")
