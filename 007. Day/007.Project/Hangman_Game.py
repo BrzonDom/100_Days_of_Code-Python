@@ -38,14 +38,15 @@ while display != word and lives:
             if guess == crc:
                 display = display[:idx] + guess + display[idx + 1:]
 
-        print("\tRight guess")
+        print(f"\tRight guess, the letter \'{guess}\' is in the word {word.count(guess)} times")
+        print()
         print(display)
         print()
 
     else:
         lives -= 1
 
-        print("\tWrong guess")
+        print(f"\tWrong guess, the letter \'{guess}\' is not in the word")
 
         print(stages[lives])
 
