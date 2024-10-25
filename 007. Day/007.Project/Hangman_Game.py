@@ -50,4 +50,6 @@ if not lives:
     print(f"The word: {word}")
 
 elif display == word:
-    print("***********************YOU LOSE**********************")
+    print("***********************YOU WIN***********************")
+    print()
+    print(f"The word: {word}")
