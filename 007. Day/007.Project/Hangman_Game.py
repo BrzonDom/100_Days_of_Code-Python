@@ -10,10 +10,8 @@ from Hangman_Words import word_list
 print(logo)
 print()
 
-word_list = ["aardvark", "baboon", "camel"]
-
 # word = random.choice(word_list)
-word = word_list[1]
+word = word_list[16]
 word_len = len(word)
 
 display = "_" * word_len
