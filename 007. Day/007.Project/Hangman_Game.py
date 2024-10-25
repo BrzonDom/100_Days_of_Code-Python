@@ -5,9 +5,6 @@ from Hangman_Art import stages, logo
 
 # TODO-4: - If the user has entered a letter they've already guessed, print the letter and let them know.
 
-# TODO-5: - If the letter is not in the chosen_word, print out the letter and let them know it's not in the word.
-#  e.g. You guessed d, that's not in the word. You lose a life.
-
 
 print(logo)
 print()
