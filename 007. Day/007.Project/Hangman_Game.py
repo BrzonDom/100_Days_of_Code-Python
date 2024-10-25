@@ -34,13 +34,15 @@ while display != word and lives:
 
         print(f"\tRight guess, the letter \'{guess}\' is in the word {word.count(guess)} times")
         print()
-        print(display)
+        print(f"Word: {display}")
         print()
 
     else:
         lives -= 1
 
         print(f"\tWrong guess, the letter \'{guess}\' is not in the word")
+        print()
+        print(f"Word: {display}")
 
         print(stages[lives])
 
