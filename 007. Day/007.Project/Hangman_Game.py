@@ -51,6 +51,8 @@ while display != word and lives:
 
 if not lives:
     print("***********************YOU LOSE**********************")
+    print()
+    print(f"The word: {word}")
 
 elif display == word:
     print("***********************YOU LOSE**********************")
