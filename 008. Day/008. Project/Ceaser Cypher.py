@@ -23,7 +23,7 @@ print(f"Shift: {shift}")
 print()
 
 char_ary = [char for char in text]
-print("\tCharacter array: {char_ary}")
+print(f"\tCharacter array: {char_ary}")
 print()
 
 print(f"\t'a': {ord('a')}")
