@@ -20,3 +20,6 @@ shift = 2
 
 print(f"Text: {text}")
 print(f"Shift: {shift}")
+
+char_ary = [char for char in text]
+print(char_ary)
