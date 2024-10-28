@@ -22,8 +22,8 @@ print(f"Text: {text}")
 print(f"Shift: {shift}")
 print()
 
-char_ary = [char for char in text]
-print(f"\tCharacter array: {char_ary}")
+text_array = [char for char in text]
+print(f"\tCharacter array: {text_array}")
 print()
 
 print(f"\tAlphabet characters: {ord('z') - ord('a')}")
@@ -35,3 +35,6 @@ print()
 print(f"\tUppercase characters: {ord('A')} - {ord('Z')}")
 print(f"\t\t'A': {ord('A')}")
 print(f"\t\t'Z': {ord('Z')}")
+
+for char in text_array:
+    print(char)
