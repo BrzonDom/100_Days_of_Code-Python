@@ -52,3 +52,6 @@ for char in text_array:
 
     else:
         print("Non-alphabetic character")
+
+for char in text_array:
+    print(char)
