@@ -24,3 +24,8 @@ print()
 
 char_ary = [char for char in text]
 print("\tCharacter array: {char_ary}")
+
+print(ord('a'))
+print(ord('z'))
+print(ord('A'))
+print(ord('Z'))
