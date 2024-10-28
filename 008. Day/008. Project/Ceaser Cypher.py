@@ -45,3 +45,12 @@ print()
 for char in text_array:
     char_val = ord(char)
     print(f"\t\t{char} : {char_val}")
+
+    if ord_a <= char_val <= ord_z:
+        print("Lowercase letter")
+
+    elif ord_A <= char_val <= ord_Z:
+        print("Uppercase letter")
+
+    else:
+        print("Non-alphabetic character")
