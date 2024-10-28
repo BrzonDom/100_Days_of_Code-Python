@@ -37,4 +37,5 @@ print(f"\t\t'A': {ord('A')}")
 print(f"\t\t'Z': {ord('Z')}")
 
 for char in text_array:
-    print(char)
+    char_val = ord(char)
+    print(char, ':', char_val)
