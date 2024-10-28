@@ -26,15 +26,20 @@ text_array = [char for char in text]
 print(f"\tCharacter array: {text_array}")
 print()
 
-print(f"\tAlphabet characters: {ord('z') - ord('a')}")
+ord_a = ord('a')
+ord_z = ord('z')
+ord_A = ord('A')
+ord_Z = ord('Z')
+
+print(f"\tAlphabet characters: {ord_z - ord_a}")
 print()
-print(f"\tLowercase characters: {ord('a')} - {ord('z')}")
-print(f"\t\t'a': {ord('a')}")
-print(f"\t\t'z': {ord('z')}")
+print(f"\tLowercase characters: {ord_a} - {ord_z}")
+print(f"\t\t'a': {ord_a}")
+print(f"\t\t'z': {ord_z}")
 print()
-print(f"\tUppercase characters: {ord('A')} - {ord('Z')}")
-print(f"\t\t'A': {ord('A')}")
-print(f"\t\t'Z': {ord('Z')}")
+print(f"\tUppercase characters: {ord_A} - {ord_Z}")
+print(f"\t\t'A': {ord_A}")
+print(f"\t\t'Z': {ord_Z}")
 
 for char in text_array:
     char_val = ord(char)
