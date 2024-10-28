@@ -23,8 +23,6 @@ print(f"Shift: {shift}")
 print()
 
 text_array = [char for char in text]
-print(f"\tCharacter array: {text_array}")
-print()
 
 ord_a = ord('a')
 ord_z = ord('z')
@@ -44,13 +42,13 @@ print()
 
 for char in text_array:
     char_val = ord(char)
-    print(f"\t\t{char} : {char_val}")
+    print(f"\t\t{char} = chr({char_val})")
 
     if ord_a <= char_val <= ord_z:
-        print("Lowercase letter")
+        print("\t\t\tLowercase letter")
 
     elif ord_A <= char_val <= ord_Z:
-        print("Uppercase letter")
+        print("\t\t\tUppercase letter")
 
     else:
-        print("Non-alphabetic character")
+        print("\t\t\tNon-alphabetic character")
