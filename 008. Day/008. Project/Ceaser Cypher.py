@@ -42,13 +42,13 @@ print()
 
 for char in text_array:
     char_val = ord(char)
-    print(f"\t\t{char} = chr({char_val})")
+    print(f"\t\t{char} = chr({char_val:3})", end=" : ")
 
     if ord_a <= char_val <= ord_z:
-        print("\t\t\tLowercase letter")
+        print("Lowercase letter")
 
     elif ord_A <= char_val <= ord_Z:
-        print("\t\t\tUppercase letter")
+        print("Uppercase letter")
 
     else:
-        print("\t\t\tNon-alphabetic character")
+        print("Non-alphabetic character")
