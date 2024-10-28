@@ -54,4 +54,4 @@ for char in text_array:
         print("Non-alphabetic character")
 
 for char in text_array:
-    print(char)
+    print(char, chr(ord(char) + shift))
