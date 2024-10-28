@@ -40,7 +40,8 @@ print()
 print(f"\tUppercase characters: {ord_A} - {ord_Z}")
 print(f"\t\t'A': {ord_A}")
 print(f"\t\t'Z': {ord_Z}")
+print()
 
 for char in text_array:
     char_val = ord(char)
-    print(char, ':', char_val)
+    print(f"\t\t{char} : {char_val}")
