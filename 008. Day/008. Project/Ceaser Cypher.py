@@ -26,7 +26,11 @@ char_ary = [char for char in text]
 print(f"\tCharacter array: {char_ary}")
 print()
 
-print(f"\t'a': {ord('a')}")
-print(f"\t'z': {ord('z')}")
-print(f"\t'A': {ord('A')}")
-print(f"\t'Z': {ord('Z')}")
+print(f"\tLowercase characters: {ord('a')} - {ord('z')}")
+print(f"\t\t'a': {ord('a')}")
+print(f"\t\t'z': {ord('z')}")
+print()
+
+print(f"\tUppercase characters: {ord('A')} - {ord('Z')}")
+print(f"\t\t'A': {ord('A')}")
+print(f"\t\t'Z': {ord('Z')}")
