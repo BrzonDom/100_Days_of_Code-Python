@@ -20,6 +20,7 @@ shift = 2
 
 print(f"Text: {text}")
 print(f"Shift: {shift}")
+print()
 
 char_ary = [char for char in text]
-print(char_ary)
+print("\tCharacter array: {char_ary}")
