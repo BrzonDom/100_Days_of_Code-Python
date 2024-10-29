@@ -52,6 +52,8 @@ for char in text_array:
 
     else:
         print("Non-alphabetic character")
+print()
 
+print(f"\tShift by: {shift}")
 for char in text_array:
-    print(char, chr(ord(char) + shift))
+    print(f"\t\t{char} -> {chr(ord(char) + shift)}")
