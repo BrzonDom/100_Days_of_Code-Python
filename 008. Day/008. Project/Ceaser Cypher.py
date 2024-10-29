@@ -56,4 +56,7 @@ print()
 
 print(f"\tShift by: {shift}")
 for char in text_array:
-    print(f"\t\t{char} -> {chr(ord(char) + shift)}")
+    char_val = ord(char)
+
+    if ord_a <= char_val <= ord_z or ord_A <= char_val <= ord_Z:
+        print(f"\t\t{char} -> {chr(ord(char) + shift)}")
