@@ -75,3 +75,10 @@ for char in text_org_array:
         text_new_array.append(chr(char_org_val))
 
         print(f"\t\t\'{char}\'")
+
+print()
+
+text_new = "".join(text_new_array)
+
+print(f"New text: {text_new}")
+print(f"New text array: {text_new_array}")
