@@ -59,7 +59,7 @@ for char in text_array:
     char_val = ord(char)
 
     if ord_a <= char_val <= ord_z or ord_A <= char_val <= ord_Z:
-        print(f"\t\t{char} -> {chr(ord(char) + shift)}")
+        print(f"\t\t\'{char}\' -> \'{chr(ord(char) + shift)}\'")
 
     else:
-        print(f"\t\t{char}")
+        print(f"\t\t\'{char}\'")
