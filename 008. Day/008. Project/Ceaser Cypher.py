@@ -1,5 +1,6 @@
 # TODO-3: Call the 'encrypt()' function and pass in the user inputs. You should be able to test the code and encrypt a
 #  message.
+from io import text_encoding
 
 
 def encrypt(org_text, shft):
@@ -38,6 +39,8 @@ for char in text_org_array:
         print("Non-alphabetic character")
 print()
 
+text_new_array = []
+
 print(f"\tShift by: {shift}")
 for char in text_org_array:
     char_org_val = ord(char)
@@ -51,6 +54,8 @@ for char in text_org_array:
         elif char_new_val < 97:
             char_new_val += 26
 
+        text_new_array.append(chr(char_new_val))
+
         print(f"\t\t\'{char}\' -> \'{chr(char_new_val)}\'")
 
     elif ord_A <= char_org_val <= ord_Z:
@@ -62,7 +67,11 @@ for char in text_org_array:
         elif char_new_val < 65:
             char_new_val += 26
 
+        text_new_array.append(chr(char_new_val))
+
         print(f"\t\t\'{char}\' -> \'{chr(char_new_val)}\'")
 
     else:
+        text_new_array.append(chr(char_org_val))
+
         print(f"\t\t\'{char}\'")
