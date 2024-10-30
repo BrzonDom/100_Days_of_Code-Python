@@ -24,17 +24,6 @@ ord_z = ord('z')
 ord_A = ord('A')
 ord_Z = ord('Z')
 
-print(f"\tAlphabet characters: {ord_z - ord_a}")
-print()
-print(f"\tLowercase characters: {ord_a} - {ord_z}")
-print(f"\t\t'a': {ord_a}")
-print(f"\t\t'z': {ord_z}")
-print()
-print(f"\tUppercase characters: {ord_A} - {ord_Z}")
-print(f"\t\t'A': {ord_A}")
-print(f"\t\t'Z': {ord_Z}")
-print()
-
 for char in text_org_array:
     char_org_val = ord(char)
     print(f"\t\t{char} = chr({char_org_val:3})", end=" : ")
