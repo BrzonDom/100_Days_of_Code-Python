@@ -15,7 +15,7 @@ def encrypt(org_text, shft):
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
             'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-text = "Hello World"
+text = "Hello Worldz"
 shift = 2
 
 print(f"Text: {text}")
@@ -60,3 +60,6 @@ for char in text_array:
 
     if ord_a <= char_val <= ord_z or ord_A <= char_val <= ord_Z:
         print(f"\t\t{char} -> {chr(ord(char) + shift)}")
+
+    else:
+        print(f"\t\t{char}")
