@@ -10,14 +10,14 @@ def encrypt(org_text, shft):
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
             'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-text = "fFeEdDcCbBaA"
+text_org = "fFeEdDcCbBaA"
 shift = -6
 
-print(f"Text: {text}")
+print(f"Text: {text_org}")
 print(f"Shift: {shift}")
 print()
 
-text_array = [char for char in text]
+text_org_array = [char for char in text_org]
 
 ord_a = ord('a')
 ord_z = ord('z')
@@ -35,14 +35,14 @@ print(f"\t\t'A': {ord_A}")
 print(f"\t\t'Z': {ord_Z}")
 print()
 
-for char in text_array:
-    char_val = ord(char)
-    print(f"\t\t{char} = chr({char_val:3})", end=" : ")
+for char in text_org_array:
+    char_org_val = ord(char)
+    print(f"\t\t{char} = chr({char_org_val:3})", end=" : ")
 
-    if ord_a <= char_val <= ord_z:
+    if ord_a <= char_org_val <= ord_z:
         print("Lowercase letter")
 
-    elif ord_A <= char_val <= ord_Z:
+    elif ord_A <= char_org_val <= ord_Z:
         print("Uppercase letter")
 
     else:
@@ -50,30 +50,30 @@ for char in text_array:
 print()
 
 print(f"\tShift by: {shift}")
-for char in text_array:
-    char_val = ord(char)
+for char in text_org_array:
+    char_org_val = ord(char)
 
-    if ord_a <= char_val <= ord_z:
-        char_val_nxt = char_val + shift
+    if ord_a <= char_org_val <= ord_z:
+        char_new_val = char_org_val + shift
 
-        if char_val_nxt > 122:
-            char_val_nxt -= 26
+        if char_new_val > 122:
+            char_new_val -= 26
 
-        elif char_val_nxt < 97:
-            char_val_nxt += 26
+        elif char_new_val < 97:
+            char_new_val += 26
 
-        print(f"\t\t\'{char}\' -> \'{chr(char_val_nxt)}\'")
+        print(f"\t\t\'{char}\' -> \'{chr(char_new_val)}\'")
 
-    elif ord_A <= char_val <= ord_Z:
-        char_val_nxt = char_val + shift
+    elif ord_A <= char_org_val <= ord_Z:
+        char_new_val = char_org_val + shift
 
-        if char_val_nxt > 90:
-            char_val_nxt -= 26
+        if char_new_val > 90:
+            char_new_val -= 26
 
-        elif char_val_nxt < 65:
-            char_val_nxt += 26
+        elif char_new_val < 65:
+            char_new_val += 26
 
-        print(f"\t\t\'{char}\' -> \'{chr(char_val_nxt)}\'")
+        print(f"\t\t\'{char}\' -> \'{chr(char_new_val)}\'")
 
     else:
         print(f"\t\t\'{char}\'")
