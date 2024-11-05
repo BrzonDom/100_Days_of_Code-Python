@@ -6,8 +6,15 @@ def encrypt(text_org, shift):
 
     text_org_array = [char for char in text_org]
 
+    ord_a = ord('a')
+    ord_z = ord('z')
+    ord_A = ord('A')
+    ord_Z = ord('Z')
+
     print(f"\tShift by: {shift}")
     for char in text_org_array:
+        char_org_val = ord(char)
+
         print(f"\t\t\'{char}\'")
 
     return
