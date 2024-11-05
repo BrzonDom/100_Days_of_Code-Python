@@ -6,8 +6,9 @@ def encrypt(text_org, shift):
 
     text_org_array = [char for char in text_org]
 
+    print(f"\tShift by: {shift}")
     for char in text_org_array:
-        print(char)
+        print(f"\t\t\'{char}\'")
 
     return
 
