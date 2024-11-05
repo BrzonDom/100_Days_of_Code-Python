@@ -22,6 +22,9 @@ print(f"Text: {text_org}")
 print(f"Shift: {shift}")
 print()
 
+encrypt(text_org, shift)
+print()
+
 text_org_array = [char for char in text_org]
 
 ord_a = ord('a')
