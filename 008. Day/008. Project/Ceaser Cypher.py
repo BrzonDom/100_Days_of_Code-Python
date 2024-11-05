@@ -2,9 +2,9 @@
 #  message.
 
 
-def encrypt(org_text, shft):
+def encrypt(text_org, shift):
 
-    pass
+    return
 
 
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
