@@ -4,6 +4,11 @@
 
 def encrypt(text_org, shift):
 
+    text_org_array = [char for char in text_org]
+
+    for char in text_org_array:
+        print(char)
+
     return
 
 
