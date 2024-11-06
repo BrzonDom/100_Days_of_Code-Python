@@ -4,8 +4,8 @@
 
 
 name = input("Your Name: ")
-price = input("Your Bid:  ")
+price = int(input("Your Bid:  "))
 bidders = input("Other bidders (Y/N): ")
 
 auction = {}
-auction[name] = int(price)
+auction[name] = price
