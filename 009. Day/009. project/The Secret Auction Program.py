@@ -1,4 +1,3 @@
-# TODO-3: Whether if new bids need to be added
 # TODO-4: Compare bids in dictionary
 
 
