@@ -14,10 +14,8 @@ def encrypt(text_org, shift):
     print(f"\tShift by: {shift}")
     for char in text_org_array:
         char_org_val = ord(char)
-        print(f"\t\t{char} = chr({char_org_val:3})", end=" : ")
 
         if ord_a <= char_org_val <= ord_z:
-            print("Lowercase letter")
             char_new_val = char_org_val + shift
 
             if char_new_val > 122:
@@ -25,9 +23,10 @@ def encrypt(text_org, shift):
 
             elif char_new_val < 97:
                 char_new_val += 26
+
+            print(f"\t\t\'{char}\' -> \'{chr(char_new_val)}\'")
 
         elif ord_A <= char_org_val <= ord_Z:
-            print("Uppercase letter")
             char_new_val = char_org_val + shift
 
             if char_new_val > 122:
@@ -36,8 +35,10 @@ def encrypt(text_org, shift):
             elif char_new_val < 97:
                 char_new_val += 26
 
+            print(f"\t\t\'{char}\' -> \'{chr(char_new_val)}\'")
+
         else:
-            print("Non-alphabetic character")
+            print(f"\t\t\'{char}\'")
 
     return
 
