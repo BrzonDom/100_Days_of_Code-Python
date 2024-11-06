@@ -5,6 +5,7 @@
 def encrypt(text_org, shift):
 
     text_org_array = [char for char in text_org]
+    text_new_array = []
 
     ord_a = ord('a')
     ord_z = ord('z')
@@ -24,6 +25,8 @@ def encrypt(text_org, shift):
             elif char_new_val < 97:
                 char_new_val += 26
 
+            text_new_array.append(chr(char_new_val))
+
             print(f"\t\t\'{char}\' -> \'{chr(char_new_val)}\'")
 
         elif ord_A <= char_org_val <= ord_Z:
@@ -35,9 +38,13 @@ def encrypt(text_org, shift):
             elif char_new_val < 97:
                 char_new_val += 26
 
+            text_new_array.append(chr(char_new_val))
+
             print(f"\t\t\'{char}\' -> \'{chr(char_new_val)}\'")
 
         else:
+            text_new_array.append(chr(char_org_val))
+
             print(f"\t\t\'{char}\'")
 
     return
