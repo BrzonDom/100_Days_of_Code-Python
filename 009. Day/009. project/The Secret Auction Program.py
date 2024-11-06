@@ -1,5 +1,3 @@
-# TODO-4: Compare bids in dictionary
-
 
 name = input("Your Name: ")
 bid = int(input("Your Bid:  "))
