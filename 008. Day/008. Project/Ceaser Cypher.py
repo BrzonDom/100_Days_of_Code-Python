@@ -15,7 +15,13 @@ def encrypt(text_org, shift):
     for char in text_org_array:
         char_org_val = ord(char)
 
-        print(f"\t\t\'{char}\'")
+        if ord_a <= char_org_val <= ord_z:
+            print(f"\t\t\'{char}\'")
+            print("\t\t\tLowercase letter")
+
+        elif ord_A <= char_org_val <= ord_Z:
+            print(f"\t\t\'{char}\'")
+            print("\t\t\tUppercase letter")
 
     return
 
