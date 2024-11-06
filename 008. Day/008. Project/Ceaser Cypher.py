@@ -14,14 +14,16 @@ def encrypt(text_org, shift):
     print(f"\tShift by: {shift}")
     for char in text_org_array:
         char_org_val = ord(char)
+        print(f"\t\t{char} = chr({char_org_val:3})", end=" : ")
 
         if ord_a <= char_org_val <= ord_z:
-            print(f"\t\t\'{char}\'")
-            print("\t\t\tLowercase letter")
+            print("Lowercase letter")
 
         elif ord_A <= char_org_val <= ord_Z:
-            print(f"\t\t\'{char}\'")
-            print("\t\t\tUppercase letter")
+            print("Uppercase letter")
+
+        else:
+            print("Non-alphabetic character")
 
     return
 
