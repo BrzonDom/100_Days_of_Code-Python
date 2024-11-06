@@ -47,7 +47,7 @@ def encrypt(text_org, shift):
 
             print(f"\t\t\'{char}\'")
 
-    return
+    return text_new_array
 
 
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
