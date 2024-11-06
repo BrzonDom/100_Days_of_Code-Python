@@ -18,9 +18,23 @@ def encrypt(text_org, shift):
 
         if ord_a <= char_org_val <= ord_z:
             print("Lowercase letter")
+            char_new_val = char_org_val + shift
+
+            if char_new_val > 122:
+                char_new_val -= 26
+
+            elif char_new_val < 97:
+                char_new_val += 26
 
         elif ord_A <= char_org_val <= ord_Z:
             print("Uppercase letter")
+            char_new_val = char_org_val + shift
+
+            if char_new_val > 122:
+                char_new_val -= 26
+
+            elif char_new_val < 97:
+                char_new_val += 26
 
         else:
             print("Non-alphabetic character")
