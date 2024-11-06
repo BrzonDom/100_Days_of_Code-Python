@@ -2,15 +2,15 @@
 
 
 name = input("Your Name: ")
-price = int(input("Your Bid:  "))
-bidders = input("Other bidders (Y/N): ")
+bid = int(input("Your Bid:  "))
+bid_more = input("Other bidders (Y/N): ")
 
 auction = {}
-auction[name] = price
+auction[name] = bid
 
-while bidders == 'Y':
+while bid_more == 'Y':
     name = input("Your Name: ")
-    price = int(input("Your Bid:  "))
-    bidders = input("Other bidders (Y/N): ")
+    bid = int(input("Your Bid:  "))
+    bid_more = input("Other bidders (Y/N): ")
 
-    auction[name] = price
+    auction[name] = bid
