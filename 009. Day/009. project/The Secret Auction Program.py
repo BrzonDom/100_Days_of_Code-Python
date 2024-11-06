@@ -14,3 +14,6 @@ while bid_more == 'Y':
     bid_more = input("Other bidders (Y/N): ")
 
     auction[name] = bid
+
+max_name = max(auction, key=lambda nm: auction[nm])
+max_bid = auction[max_name]
