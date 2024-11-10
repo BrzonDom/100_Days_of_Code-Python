@@ -5,6 +5,8 @@ categories = data[0].keys()
 print("Categories:")
 for category in categories:
     print(f"  - {category}")
+print()
 
-# for person in data:
-#     print(person)
+print("People:")
+for person in data:
+    print(f"\t{person}")
