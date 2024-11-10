@@ -11,8 +11,6 @@ def account_print(account, categories):
     print(f"\t\tCountry: {account[categories[3]]}")
     print()
 
-    return
-
 
 categories = tuple(data[0].keys())
 # 0. name
