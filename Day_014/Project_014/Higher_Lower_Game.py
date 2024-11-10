@@ -31,19 +31,8 @@ while account_next == account_current:
 
 accounts = [account_current, account_next]
 
-# print(accounts[0])
-# print(accounts[1])
-# print()
-
 print("Accounts:")
 print()
 for account in accounts:
 
     account_print(account, categories)
-
-    # print(f"\tName: {account[categories[0]]}")
-    # print()
-    # print(f"\t\tFollowers: {account[categories[1]]}k")
-    # print(f"\t\tDescription: {account[categories[2]]}")
-    # print(f"\t\tCountry: {account[categories[3]]}")
-    # print()
