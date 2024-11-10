@@ -2,13 +2,13 @@ import random
 from Higher_Lower_Data import data
 
 
-def account_print(account, categories):
+def account_print(account):
 
-    print(f"\tName: {account[categories[0]]}")
+    print(f"\tName: {account['name']}")
     print()
-    print(f"\t\tFollowers: {account[categories[1]]}k")
-    print(f"\t\tDescription: {account[categories[2]]}")
-    print(f"\t\tCountry: {account[categories[3]]}")
+    print(f"\t\tFollowers: {account['follower_count']}k")
+    print(f"\t\tDescription: {account['description']}")
+    print(f"\t\tCountry: {account['country']}")
     print()
 
 
@@ -35,4 +35,4 @@ print("Accounts:")
 print()
 for account in accounts:
 
-    account_print(account, categories)
+    account_print(account)
