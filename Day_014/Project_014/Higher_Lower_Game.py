@@ -9,4 +9,7 @@ print()
 
 print("People:")
 for person in data:
-    print(f"\t{person}")
+
+    for category in categories:
+        print(f"\t{category}: {person[category]}")
+    print()
