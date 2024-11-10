@@ -12,7 +12,8 @@ for category in categories:
     print(f"  - {category}")
 print()
 
-print(random.choice(data))
+account_current = random.choice(data)
+account_next = random.choice(data)
 
 # print("Accounts:")
 # print()
