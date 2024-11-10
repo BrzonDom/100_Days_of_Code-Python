@@ -14,6 +14,10 @@ print()
 
 account_current = random.choice(data)
 account_next = random.choice(data)
+
+while account_next == account_current:
+    account_next = random.choice(data)
+
 accounts = [account_current, account_next]
 
 # print(accounts[0])
