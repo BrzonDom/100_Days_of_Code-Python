@@ -14,13 +14,18 @@ print()
 
 account_current = random.choice(data)
 account_next = random.choice(data)
+accounts = [account_current, account_next]
 
-# print("Accounts:")
+# print(accounts[0])
+# print(accounts[1])
 # print()
-# for account in data:
-#     print(f"\tName: {account[categories[0]]}")
-#     print()
-#     print(f"\t\tFollowers: {account[categories[1]]}k")
-#     print(f"\t\tDescription: {account[categories[2]]}")
-#     print(f"\t\tCountry: {account[categories[3]]}")
-#     print()
+
+print("Accounts:")
+print()
+for account in accounts:
+    print(f"\tName: {account[categories[0]]}")
+    print()
+    print(f"\t\tFollowers: {account[categories[1]]}k")
+    print(f"\t\tDescription: {account[categories[2]]}")
+    print(f"\t\tCountry: {account[categories[3]]}")
+    print()
