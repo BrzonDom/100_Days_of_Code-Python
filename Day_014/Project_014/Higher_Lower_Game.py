@@ -1,6 +1,6 @@
 from Higher_Lower_Data import data
 
-categories = data[0].keys()
+categories = tuple(data[0].keys())
 
 # 0. name
 # 1. follower_count
@@ -12,9 +12,13 @@ for category in categories:
     print(f"  - {category}")
 print()
 
-print("People:")
-for person in data:
+print("Accounts:")
+print()
 
-    for category in categories:
-        print(f"\t{category}: {person[category]}")
+for account in data:
+    print(f"\tName: {account[categories[0]]}")
+    print()
+    print(f"\t\tFollowers: {account[categories[1]]}k")
+    print(f"\t\tDescription: {account[categories[2]]}")
+    print(f"\t\tCountry: {account[categories[3]]}")
     print()
