@@ -39,9 +39,14 @@ for account in accounts:
 
 for account in data:
 
-    print(f"\tName: {account['name']}")
+    str_name = f"\tName: {account['name']}"
+    str_followers = f"\t\tFollowers: {account['follower_count']}k"
+    str_description = f"\t\tDescription: {account['description']}"
+    str_country = f"\t\tCountry: {account['country']}"
+
+    print(str_name)
     print()
-    print(f"\t\tFollowers: {account['follower_count']}k")
-    print(f"\t\tDescription: {account['description']}")
-    print(f"\t\tCountry: {account['country']}")
+    print(str_followers)
+    print(str_description)
+    print(str_country)
     print()
