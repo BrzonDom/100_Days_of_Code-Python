@@ -40,21 +40,24 @@ print()
 
 max_len = 87
 
-# print("Accounts:")
-# print()
-# for account in data:
-#
-#     str_name = ' ' * 4 + f"Name: {account['name']}"
-#     str_followers = ' ' * 8 + f"Followers: {account['follower_count']}k"
-#     str_description = ' ' * 8 + f"Description: {account['description']}"
-#     str_country = ' ' * 8 + f"Country: {account['country']}"
-#
-#     print(str_name)
-#     print()
-#     print(str_followers)
-#     print(str_description)
-#     print(str_country)
-#     print()
+print("Accounts:")
+print()
+for account in data:
+
+    str_name = f"Name: {account['name']}"
+    str_followers = f"Followers: {account['follower_count']}k"
+    str_description = f"Description: {account['description']}"
+    str_country = f"Country: {account['country']}"
+
+    print('+' + '-' * max_len + '+')
+    print('|' + ' ' * 3 + str_name+ ' ' * (max_len - 3 - len(str_name)) + '|')
+    print('+' + '-' * max_len + '+')
+    print('|' + ' ' * 7 + str_followers+ ' ' * (max_len - 7 - len(str_followers)) + '|')
+    print('|' + ' ' * 7 + str_description+ ' ' * (max_len - 7 - len(str_description)) + '|')
+    print('|' + ' ' * 7 + str_country + ' ' * (max_len - 7 - len(str_country)) + '|')
+    print('+' + '-' * max_len + '+')
+    print()
+
 #
 #     max_len = max(max_len, len(str_name), len(str_followers), len(str_description), len(str_country))
 #
