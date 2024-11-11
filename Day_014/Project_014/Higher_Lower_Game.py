@@ -31,12 +31,15 @@ while account_next == account_current:
 
 accounts = [account_current, account_next]
 
-print("Accounts:")
+print("Compare these Accounts:")
 print()
 for account in accounts:
 
     account_print(account)
+print()
 
+print("Accounts:")
+print()
 for account in data:
 
     str_name = f"\tName: {account['name']}"
