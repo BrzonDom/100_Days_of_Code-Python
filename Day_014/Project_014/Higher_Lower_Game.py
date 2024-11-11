@@ -36,3 +36,12 @@ print()
 for account in accounts:
 
     account_print(account)
+
+for account in data:
+
+    print(f"\tName: {account['name']}")
+    print()
+    print(f"\t\tFollowers: {account['follower_count']}k")
+    print(f"\t\tDescription: {account['description']}")
+    print(f"\t\tCountry: {account['country']}")
+    print()
