@@ -38,24 +38,24 @@ for account in accounts:
     account_print(account)
 print()
 
-max_len = 0
+max_len = 87
 
-print("Accounts:")
-print()
-for account in data:
-
-    str_name = ' ' * 4 + f"Name: {account['name']}"
-    str_followers = ' ' * 8 + f"Followers: {account['follower_count']}k"
-    str_description = ' ' * 8 + f"Description: {account['description']}"
-    str_country = ' ' * 8 + f"Country: {account['country']}"
-
-    print(str_name)
-    print()
-    print(str_followers)
-    print(str_description)
-    print(str_country)
-    print()
-
-    max_len = max(max_len, len(str_name), len(str_followers), len(str_description), len(str_country))
-
-print(max_len)
+# print("Accounts:")
+# print()
+# for account in data:
+#
+#     str_name = ' ' * 4 + f"Name: {account['name']}"
+#     str_followers = ' ' * 8 + f"Followers: {account['follower_count']}k"
+#     str_description = ' ' * 8 + f"Description: {account['description']}"
+#     str_country = ' ' * 8 + f"Country: {account['country']}"
+#
+#     print(str_name)
+#     print()
+#     print(str_followers)
+#     print(str_description)
+#     print(str_country)
+#     print()
+#
+#     max_len = max(max_len, len(str_name), len(str_followers), len(str_description), len(str_country))
+#
+# print(max_len)
