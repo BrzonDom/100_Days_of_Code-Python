@@ -4,11 +4,20 @@ from Higher_Lower_Data import data
 
 def account_print(account):
 
-    print(f"\tName: {account['name']}")
-    print()
-    print(f"\t\tFollowers: {account['follower_count']}k")
-    print(f"\t\tDescription: {account['description']}")
-    print(f"\t\tCountry: {account['country']}")
+    max_len = 87
+
+    str_name = f"Name: {account['name']}"
+    str_followers = f"Followers: {account['follower_count']}k"
+    str_description = f"Description: {account['description']}"
+    str_country = f"Country: {account['country']}"
+
+    print('+' + '-' * max_len + '+')
+    print('|' + ' ' * 3 + str_name+ ' ' * (max_len - 3 - len(str_name)) + '|')
+    print('+' + '-' * max_len + '+')
+    print('|' + ' ' * 7 + str_followers + ' ' * (max_len - 7 - len(str_followers)) + '|')
+    print('|' + ' ' * 7 + str_description + ' ' * (max_len - 7 - len(str_description)) + '|')
+    print('|' + ' ' * 7 + str_country + ' ' * (max_len - 7 - len(str_country)) + '|')
+    print('+' + '-' * max_len + '+')
     print()
 
 
@@ -52,8 +61,8 @@ for account in data:
     print('+' + '-' * max_len + '+')
     print('|' + ' ' * 3 + str_name+ ' ' * (max_len - 3 - len(str_name)) + '|')
     print('+' + '-' * max_len + '+')
-    print('|' + ' ' * 7 + str_followers+ ' ' * (max_len - 7 - len(str_followers)) + '|')
-    print('|' + ' ' * 7 + str_description+ ' ' * (max_len - 7 - len(str_description)) + '|')
+    print('|' + ' ' * 7 + str_followers + ' ' * (max_len - 7 - len(str_followers)) + '|')
+    print('|' + ' ' * 7 + str_description + ' ' * (max_len - 7 - len(str_description)) + '|')
     print('|' + ' ' * 7 + str_country + ' ' * (max_len - 7 - len(str_country)) + '|')
     print('+' + '-' * max_len + '+')
     print()
