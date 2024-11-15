@@ -51,12 +51,7 @@ while account_next == account_current:
 
 accounts = [account_current, account_next]
 
-print("Compare these Accounts:")
-print()
-for account in accounts:
-
-    account_print(account)
-print()
+account_compare_print(accounts)
 
 max_len = 87
 
