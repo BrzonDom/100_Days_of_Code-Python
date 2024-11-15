@@ -21,6 +21,11 @@ def account_print(account):
     print()
 
 
+def account_compare_print():
+
+    return
+
+
 categories = tuple(data[0].keys())
 # 0. name
 # 1. follower_count
