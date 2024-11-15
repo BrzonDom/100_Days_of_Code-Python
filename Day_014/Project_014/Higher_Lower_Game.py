@@ -21,9 +21,9 @@ def account_print(account):
     print()
 
 
-def account_compare_print():
+def account_compare_print(accounts):
 
-    return
+    account_current, accounts_next = accounts
 
 
 categories = tuple(data[0].keys())
