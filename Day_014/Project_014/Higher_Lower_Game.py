@@ -53,13 +53,13 @@ accounts = [account_current, account_next]
 
 account_compare_print(accounts)
 
-max_len = 87
-
-print("Accounts:")
-print()
-for account in data:
-
-    account_print(account)
+# max_len = 87
+#
+# print("Accounts:")
+# print()
+# for account in data:
+#
+#     account_print(account)
 
 
 """
