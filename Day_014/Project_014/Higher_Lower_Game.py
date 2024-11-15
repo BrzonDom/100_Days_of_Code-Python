@@ -25,6 +25,12 @@ def account_compare_print(accounts):
 
     account_current, accounts_next = accounts
 
+    print("Compare these Accounts:")
+    print()
+    for account in accounts:
+        account_print(account)
+    print()
+
 
 categories = tuple(data[0].keys())
 # 0. name
