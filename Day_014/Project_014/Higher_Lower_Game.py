@@ -40,11 +40,18 @@ def account_compare_print(accounts):
     print(f"\t\t{str_followers}")
     print(f"\t\t{str_description}")
     print(f"\t\t{str_country}")
+    print()
 
     str_name = f"Name: {account_next['name']}"
     str_followers = f"Followers: {account_next['follower_count']}k"
     str_description = f"Description: {account_next['description']}"
     str_country = f"Country: {account_next['country']}"
+
+    print(f"\t{str_name}")
+    print()
+    print(f"\t\t{str_followers}")
+    print(f"\t\t{str_description}")
+    print(f"\t\t{str_country}")
 
 
 categories = tuple(data[0].keys())
