@@ -27,20 +27,20 @@ def account_compare_print(accounts):
 
     max_len = 87
 
-    str_name = f"Name: {account_current['name']}"
-    str_followers = f"Followers: {account_current['follower_count']}k"
-    str_description = f"Description: {account_current['description']}"
-    str_country = f"Country: {account_current['country']}"
+    name_cur = account_current['name']
+    followers_cur = account_current['follower_count']
+    description_cur = account_current['description']
+    country_cur = account_current['country']
 
     print("Compare these Accounts:")
     print()
 
     print("+---------------------------------------------------------------------------------------+")
-    print("|   " + str_name + ' ' * (max_len - 3 - len(str_name)) + '|')
+    print("|   Name: " + name_cur + ' ' * (max_len - (3 + 6) - len(name_cur)) + '|')
     print("+---------------------------------------------------------------------------------------+")
-    print("|       " + str_followers + ' ' * (max_len - 7 - len(str_followers)) + '|')
-    print("|       " + str_description + ' ' * (max_len - 7 - len(str_description)) + '|')
-    print("|       " + str_country + ' ' * (max_len - 7 - len(str_country)) + '|')
+    print("|       Followers: " + str(followers_cur) + ' ' * (max_len - (7 + 11) - len(str(followers_cur))) + '|')
+    print("|       Description: " + description_cur + ' ' * (max_len - (7 + 13) - len(description_cur)) + '|')
+    print("|       Country: " + country_cur + ' ' * (max_len - (7 + 9) - len(country_cur)) + '|')
     print("+----------------------------------------------------------------------------+----------+")
 
     str_name = f"Name: {account_next['name']}"
