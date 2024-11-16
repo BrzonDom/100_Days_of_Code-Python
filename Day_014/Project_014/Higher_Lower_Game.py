@@ -25,10 +25,14 @@ def account_compare_print(accounts):
 
     account_current, accounts_next = accounts
 
+    max_len = 87
+
+    str_name = f"Name: {account_current['name']}"
+    str_followers = f"Followers: {account_current['follower_count']}k"
+    str_description = f"Description: {account_current['description']}"
+    str_country = f"Country: {account_current['country']}"
+
     print("Compare these Accounts:")
-    print()
-    for account in accounts:
-        account_print(account)
     print()
 
 
