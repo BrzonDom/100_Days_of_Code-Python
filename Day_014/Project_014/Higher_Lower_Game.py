@@ -11,13 +11,13 @@ def account_print(account):
     str_description = f"Description: {account['description']}"
     str_country = f"Country: {account['country']}"
 
-    print('+' + '-' * max_len + '+')
-    print('|' + ' ' * 3 + str_name+ ' ' * (max_len - 3 - len(str_name)) + '|')
-    print('+' + '-' * max_len + '+')
-    print('|' + ' ' * 7 + str_followers + ' ' * (max_len - 7 - len(str_followers)) + '|')
-    print('|' + ' ' * 7 + str_description + ' ' * (max_len - 7 - len(str_description)) + '|')
-    print('|' + ' ' * 7 + str_country + ' ' * (max_len - 7 - len(str_country)) + '|')
-    print('+' + '-' * max_len + '+')
+    print("+---------------------------------------------------------------------------------------+")
+    print("|   " + str_name + ' ' * (max_len - 3 - len(str_name)) + '|')
+    print("+---------------------------------------------------------------------------------------+")
+    print("|       " + str_followers + ' ' * (max_len - 7 - len(str_followers)) + '|')
+    print("|       " + str_description + ' ' * (max_len - 7 - len(str_description)) + '|')
+    print("|       " + str_country + ' ' * (max_len - 7 - len(str_country)) + '|')
+    print("+---------------------------------------------------------------------------------------+")
     print()
 
 
