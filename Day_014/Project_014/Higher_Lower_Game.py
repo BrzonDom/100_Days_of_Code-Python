@@ -41,15 +41,17 @@ def account_compare_print(accounts):
     print("|       " + str_followers + ' ' * (max_len - 7 - len(str_followers)) + '|')
     print("|       " + str_description + ' ' * (max_len - 7 - len(str_description)) + '|')
     print("|       " + str_country + ' ' * (max_len - 7 - len(str_country)) + '|')
-    print("+---------------------------------------------------------------------------------------+")
-    print()
+    print("+----------------------------------------------------------------------------+----------+")
 
     str_name = f"Name: {account_next['name']}"
     str_followers = f"Followers: {account_next['follower_count']}k"
     str_description = f"Description: {account_next['description']}"
     str_country = f"Country: {account_next['country']}"
 
-    print("+---------------------------------------------------------------------------------------+")
+    print("                                        +------+                             | Option B |")
+    print("+----------+                            |  VS  |                             +----------+")
+    print("| Option A |                            +------+")
+    print("+----------+----------------------------------------------------------------------------+")
     print("|   " + str_name + ' ' * (max_len - 3 - len(str_name)) + '|')
     print("+---------------------------------------------------------------------------------------+")
     print("|       " + str_followers + ' ' * (max_len - 7 - len(str_followers)) + '|')
