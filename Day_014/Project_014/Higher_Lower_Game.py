@@ -35,11 +35,13 @@ def account_compare_print(accounts):
     print("Compare these Accounts:")
     print()
 
-    print(f"\t{str_name}")
-    print()
-    print(f"\t\t{str_followers}")
-    print(f"\t\t{str_description}")
-    print(f"\t\t{str_country}")
+    print('+' + '-' * max_len + '+')
+    print('|' + ' ' * 3 + str_name+ ' ' * (max_len - 3 - len(str_name)) + '|')
+    print('+' + '-' * max_len + '+')
+    print('|' + ' ' * 7 + str_followers + ' ' * (max_len - 7 - len(str_followers)) + '|')
+    print('|' + ' ' * 7 + str_description + ' ' * (max_len - 7 - len(str_description)) + '|')
+    print('|' + ' ' * 7 + str_country + ' ' * (max_len - 7 - len(str_country)) + '|')
+    print('+' + '-' * max_len + '+')
     print()
 
     str_name = f"Name: {account_next['name']}"
@@ -47,11 +49,14 @@ def account_compare_print(accounts):
     str_description = f"Description: {account_next['description']}"
     str_country = f"Country: {account_next['country']}"
 
-    print(f"\t{str_name}")
+    print('+' + '-' * max_len + '+')
+    print('|' + ' ' * 3 + str_name+ ' ' * (max_len - 3 - len(str_name)) + '|')
+    print('+' + '-' * max_len + '+')
+    print('|' + ' ' * 7 + str_followers + ' ' * (max_len - 7 - len(str_followers)) + '|')
+    print('|' + ' ' * 7 + str_description + ' ' * (max_len - 7 - len(str_description)) + '|')
+    print('|' + ' ' * 7 + str_country + ' ' * (max_len - 7 - len(str_country)) + '|')
+    print('+' + '-' * max_len + '+')
     print()
-    print(f"\t\t{str_followers}")
-    print(f"\t\t{str_description}")
-    print(f"\t\t{str_country}")
 
 
 categories = tuple(data[0].keys())
