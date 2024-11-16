@@ -35,6 +35,12 @@ def account_compare_print(accounts):
     print("Compare these Accounts:")
     print()
 
+    print(f"\t{str_name}")
+    print()
+    print(f"\t\t{str_followers}")
+    print(f"\t\t{str_description}")
+    print(f"\t\t{str_country}")
+
 
 categories = tuple(data[0].keys())
 # 0. name
