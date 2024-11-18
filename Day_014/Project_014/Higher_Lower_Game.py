@@ -32,9 +32,13 @@ def account_compare_print(accounts):
     description_cur = account_current['description']
     country_cur = account_current['country']
 
+    name_nxt = account_next['name']
+    followers_nxt = account_next['follower_count']
+    description_nxt = account_next['description']
+    country_nxt = account_next['country']
+
     print("Compare these Accounts:")
     print()
-
     print("+---------------------------------------------------------------------------------------+")
     print("|   Name: " + name_cur + ' ' * (max_len - (3 + 6) - len(name_cur)) + '|')
     print("+---------------------------------------------------------------------------------------+")
@@ -42,21 +46,15 @@ def account_compare_print(accounts):
     print("|       Description: " + description_cur + ' ' * (max_len - (7 + 13) - len(description_cur)) + '|')
     print("|       Country: " + country_cur + ' ' * (max_len - (7 + 9) - len(country_cur)) + '|')
     print("+----------------------------------------------------------------------------+----------+")
-
-    str_name = f"Name: {account_next['name']}"
-    str_followers = f"Followers: {account_next['follower_count']}k"
-    str_description = f"Description: {account_next['description']}"
-    str_country = f"Country: {account_next['country']}"
-
     print("                                        +------+                             | Option B |")
     print("+----------+                            |  VS  |                             +----------+")
     print("| Option A |                            +------+")
     print("+----------+----------------------------------------------------------------------------+")
-    print("|   " + str_name + ' ' * (max_len - 3 - len(str_name)) + '|')
+    print("|   Name: " + name_nxt + ' ' * (max_len - (3 + 6) - len(name_nxt)) + '|')
     print("+---------------------------------------------------------------------------------------+")
-    print("|       " + str_followers + ' ' * (max_len - 7 - len(str_followers)) + '|')
-    print("|       " + str_description + ' ' * (max_len - 7 - len(str_description)) + '|')
-    print("|       " + str_country + ' ' * (max_len - 7 - len(str_country)) + '|')
+    print("|       Followers: " + str(followers_nxt) + ' ' * (max_len - (7 + 11) - len(str(followers_nxt))) + '|')
+    print("|       Description: " + description_nxt + ' ' * (max_len - (7 + 13) - len(description_nxt)) + '|')
+    print("|       Country: " + country_nxt + ' ' * (max_len - (7 + 9) - len(country_nxt)) + '|')
     print("+---------------------------------------------------------------------------------------+")
     print()
 
