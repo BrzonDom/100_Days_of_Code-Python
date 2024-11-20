@@ -117,14 +117,25 @@ print()
 if pick == "espresso":
     print("\tEspresso")
     print(f"\t\tCost: {menu['espresso']['cost']}")
+    print("\t\tIngredients:")
+    print(f"\t\t\tWater: {menu['espresso']['ingredients']['water']}")
+    print(f"\t\t\tCoffee: {menu['espresso']['ingredients']['coffee']}")
 
 elif pick == "latte":
     print("\tLatte")
     print(f"\t\tCost: {menu['latte']['cost']}")
+    print("\t\tIngredients:")
+    print(f"\t\t\tWater: {menu['cappuccino']['ingredients']['water']}")
+    print(f"\t\t\tMilk: {menu['cappuccino']['ingredients']['milk']}")
+    print(f"\t\t\tCoffee: {menu['cappuccino']['ingredients']['coffee']}")
 
 elif pick == "cappuccino":
     print("\tCappuccino")
     print(f"\t\tCost: {menu['cappuccino']['cost']}")
+    print("\t\tIngredients:")
+    print(f"\t\t\tWater: {menu['cappuccino']['ingredients']['water']}")
+    print(f"\t\t\tMilk: {menu['cappuccino']['ingredients']['milk']}")
+    print(f"\t\t\tCoffee: {menu['cappuccino']['ingredients']['coffee']}")
 
 else:
     print("\tYour pick is not one of the options")
