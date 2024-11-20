@@ -102,9 +102,16 @@ coins = {
 #          latte was their choice of drink.
 
 
-def ingredients_print():
+def ingredients_print(coffee):
 
-    pass
+    if coffee == "espresso":
+        pass
+
+    elif coffee == "latte":
+        pass
+
+    elif coffee == "cappuccino":
+        pass
 
 
 print("Menu:")
