@@ -116,12 +116,15 @@ print()
 
 if pick == "espresso":
     print("\tEspresso")
+    print(f"\t\tCost: {menu['espresso']['cost']}")
 
 elif pick == "latte":
     print("\tLatte")
+    print(f"\t\tCost: {menu['latte']['cost']}")
 
 elif pick == "cappuccino":
     print("\tCappuccino")
+    print(f"\t\tCost: {menu['cappuccino']['cost']}")
 
 else:
     print("\tYour pick is not one of the options")
