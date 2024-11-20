@@ -162,7 +162,10 @@ elif pick.lower() == "options" or pick == '4':
     print("\tOptions:")
     print("\t\t1. Menu")
     print("\t\t2. Resources")
-    print("\t\t3. Off")
+    print("\t\t3. Espresso ingredients")
+    print("\t\t4. Latte ingredients")
+    print("\t\t5. Cappuccino ingredients")
+    print("\t\t6. Off")
 
 else:
     print("\tYour pick is not one of the options")
