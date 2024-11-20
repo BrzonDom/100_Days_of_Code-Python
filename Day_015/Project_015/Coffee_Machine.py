@@ -105,13 +105,21 @@ coins = {
 def ingredients_print(coffee):
 
     if coffee == "espresso":
-        pass
+        print("\t\tIngredients:")
+        print(f"\t\t\tWater: {menu['espresso']['ingredients']['water']}")
+        print(f"\t\t\tCoffee: {menu['espresso']['ingredients']['coffee']}")
 
     elif coffee == "latte":
-        pass
+        print("\t\tIngredients:")
+        print(f"\t\t\tWater: {menu['latte']['ingredients']['water']}")
+        print(f"\t\t\tMilk: {menu['latte']['ingredients']['milk']}")
+        print(f"\t\t\tCoffee: {menu['latte']['ingredients']['coffee']}")
 
     elif coffee == "cappuccino":
-        pass
+        print("\t\tIngredients:")
+        print(f"\t\t\tWater: {menu['cappuccino']['ingredients']['water']}")
+        print(f"\t\t\tMilk: {menu['cappuccino']['ingredients']['milk']}")
+        print(f"\t\t\tCoffee: {menu['cappuccino']['ingredients']['coffee']}")
 
 
 print("Menu:")
