@@ -106,17 +106,22 @@ coins = {
 #       b. Once all resources have been deducted, tell the user “Here is your latte. Enjoy!”. If
 #          latte was their choice of drink.
 
-print("What would you like? (espresso/latte/cappuccino):")
+print("Options:(espresso/latte/cappuccino):")
+print("\t1. Espresso")
+print("\t2. Latte")
+print("\t3. Cappuccino")
+print()
 pick = input("\tYour pick: ")
+print()
 
 if pick == "espresso":
-    print("espresso")
+    print("\tEspresso")
 
 elif pick == "latte":
-    print("latte")
+    print("\tLatte")
 
 elif pick == "cappuccino":
-    print("cappuccino")
+    print("\tCappuccino")
 
 else:
-    print("Your pick is not one of the options")
+    print("\tYour pick is not one of the options")
