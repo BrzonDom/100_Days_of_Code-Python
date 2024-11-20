@@ -105,22 +105,28 @@ coins = {
 def ingredients_print(coffee):
 
     if coffee == "espresso":
+        ingredients = menu[coffee]["ingredients"].keys()
+
         print("\t\tIngredients:")
-        print(f"\t\t\tWater: {menu['espresso']['ingredients']['water']}")
-        print(f"\t\t\tCoffee: {menu['espresso']['ingredients']['coffee']}")
+        for ingredient in ingredients:
+            print(f"\t\t\t{ingredient.capitalize()}: {menu[coffee]['ingredients'][ingredient]}")
 
     elif coffee == "latte":
+        ingredients = menu[coffee]["ingredients"].keys()
+
         print("\t\tIngredients:")
-        print(f"\t\t\tWater: {menu['latte']['ingredients']['water']}")
-        print(f"\t\t\tMilk: {menu['latte']['ingredients']['milk']}")
-        print(f"\t\t\tCoffee: {menu['latte']['ingredients']['coffee']}")
+        for ingredient in ingredients:
+            print(f"\t\t\t{ingredient.capitalize()}: {menu[coffee]['ingredients'][ingredient]}")
 
     elif coffee == "cappuccino":
-        print("\t\tIngredients:")
-        print(f"\t\t\tWater: {menu['cappuccino']['ingredients']['water']}")
-        print(f"\t\t\tMilk: {menu['cappuccino']['ingredients']['milk']}")
-        print(f"\t\t\tCoffee: {menu['cappuccino']['ingredients']['coffee']}")
+        ingredients = menu[coffee]["ingredients"].keys()
 
+        print("\t\tIngredients:")
+        for ingredient in ingredients:
+            print(f"\t\t\t{ingredient.capitalize()}: {menu[coffee]['ingredients'][ingredient]}")
+
+
+ingredients_print("cappuccino")
 
 print("Menu:")
 print("\t1. Espresso")
