@@ -107,4 +107,16 @@ coins = {
 #          latte was their choice of drink.
 
 print("What would you like? (espresso/latte/cappuccino):")
-input("\tYour pick: ")
+pick = input("\tYour pick: ")
+
+if pick == "espresso":
+    print("espresso")
+
+elif pick == "latte":
+    print("latte")
+
+elif pick == "cappuccino":
+    print("cappuccino")
+
+else:
+    print("Your pick is not one of the options")
