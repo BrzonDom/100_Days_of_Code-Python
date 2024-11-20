@@ -59,67 +59,69 @@ def account_compare_print(accounts):
     print()
 
 
-categories = tuple(data[0].keys())
-# 0. name
-# 1. follower_count
-# 2. description
-# 3. country
+if __name__ == "__main__":
 
-print("Categories:")
-for category in categories:
-    print(f"  - {category}")
-print()
+    categories = tuple(data[0].keys())
+    # 0. name
+    # 1. follower_count
+    # 2. description
+    # 3. country
 
-account_current = random.choice(data)
-account_next = random.choice(data)
+    print("Categories:")
+    for category in categories:
+        print(f"  - {category}")
+    print()
 
-while account_next == account_current:
+    account_current = random.choice(data)
     account_next = random.choice(data)
 
-accounts = [account_current, account_next]
+    while account_next == account_current:
+        account_next = random.choice(data)
 
-account_compare_print(accounts)
+    accounts = [account_current, account_next]
 
-score = 0
-pick = input("Your pick: ")
+    account_compare_print(accounts)
 
-if pick == 'a' or pick == 'A':
-
-    if account_current["follower_count"] < account_next["follower_count"]:
-        score += 1
-
-        print("Correct!")
-        print(f"\tScore: {score}")
-        print()
-
-    else:
-        print("Game Over!")
-        print(f"\tScore: {score}")
-
-        quit()
-
-elif pick == 'b' or pick == 'B':
-
-    if account_current["follower_count"] > account_next["follower_count"]:
-        score += 1
-
-        print("Correct!")
-        print(f"\tScore: {score}")
-        print()
-
-    else:
-        print("Game Over!")
-        print(f"\tScore: {score}")
-
-        quit()
-
-else:
+    score = 0
     pick = input("Your pick: ")
 
-# max_len = 87
-#
-# print("Accounts:")
-# print()
-# for account in data:
-#
-#     account_print(account)
+    if pick == 'a' or pick == 'A':
+
+        if account_current["follower_count"] < account_next["follower_count"]:
+            score += 1
+
+            print("Correct!")
+            print(f"\tScore: {score}")
+            print()
+
+        else:
+            print("Game Over!")
+            print(f"\tScore: {score}")
+
+            quit()
+
+    elif pick == 'b' or pick == 'B':
+
+        if account_current["follower_count"] > account_next["follower_count"]:
+            score += 1
+
+            print("Correct!")
+            print(f"\tScore: {score}")
+            print()
+
+        else:
+            print("Game Over!")
+            print(f"\tScore: {score}")
+
+            quit()
+
+    else:
+        pick = input("Your pick: ")
+
+    # max_len = 87
+    #
+    # print("Accounts:")
+    # print()
+    # for account in data:
+    #
+    #     account_print(account)
