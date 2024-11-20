@@ -139,3 +139,11 @@ elif pick == "cappuccino":
 
 else:
     print("\tYour pick is not one of the options")
+print()
+
+print("Options:(espresso/latte/cappuccino):")
+print("\t1. Espresso")
+print("\t2. Latte")
+print("\t3. Cappuccino")
+print()
+pick = input("\tYour pick: ")
