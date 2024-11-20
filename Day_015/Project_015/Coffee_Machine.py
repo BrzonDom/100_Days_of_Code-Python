@@ -105,3 +105,6 @@ coins = {
 #          Money: $2.5
 #       b. Once all resources have been deducted, tell the user “Here is your latte. Enjoy!”. If
 #          latte was their choice of drink.
+
+print("What would you like? (espresso/latte/cappuccino):")
+input("\tYour pick: ")
