@@ -80,6 +80,17 @@ accounts = [account_current, account_next]
 
 account_compare_print(accounts)
 
+pick = input("Your pick: ")
+
+if pick == 'a' or pick == 'A':
+    pass
+
+elif pick == 'b' or pick == 'B':
+    pass
+
+else:
+    pick = input("Your pick: ")
+
 # max_len = 87
 #
 # print("Accounts:")
