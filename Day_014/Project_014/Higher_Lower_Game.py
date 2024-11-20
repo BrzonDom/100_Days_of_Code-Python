@@ -88,7 +88,14 @@ if pick == 'a' or pick == 'A':
     if account_current["follower_count"] < account_next["follower_count"]:
         score += 1
 
+        print("Correct!")
+        print(f"\tScore: {score}")
+        print()
+
     else:
+        print("Game Over!")
+        print(f"\tScore: {score}")
+
         quit()
 
 elif pick == 'b' or pick == 'B':
@@ -96,7 +103,14 @@ elif pick == 'b' or pick == 'B':
     if account_current["follower_count"] > account_next["follower_count"]:
         score += 1
 
+        print("Correct!")
+        print(f"\tScore: {score}")
+        print()
+
     else:
+        print("Game Over!")
+        print(f"\tScore: {score}")
+
         quit()
 
 else:
