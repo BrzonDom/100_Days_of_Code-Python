@@ -101,6 +101,12 @@ coins = {
 #       b. Once all resources have been deducted, tell the user “Here is your latte. Enjoy!”. If
 #          latte was their choice of drink.
 
+
+def ingredients_print():
+
+    pass
+
+
 print("Menu:")
 print("\t1. Espresso")
 print("\t2. Latte")
