@@ -87,7 +87,7 @@ if __name__ == "__main__":
 
     if pick == 'a' or pick == 'A':
 
-        if account_current["follower_count"] < account_next["follower_count"]:
+        if account_current["follower_count"] > account_next["follower_count"]:
             score += 1
 
             print("Correct!")
@@ -102,7 +102,7 @@ if __name__ == "__main__":
 
     elif pick == 'b' or pick == 'B':
 
-        if account_current["follower_count"] > account_next["follower_count"]:
+        if account_current["follower_count"] < account_next["follower_count"]:
             score += 1
 
             print("Correct!")
