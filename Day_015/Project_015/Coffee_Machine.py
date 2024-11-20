@@ -137,28 +137,28 @@ print()
 pick = input("\tYour pick: ")
 print()
 
-if pick == "espresso":
+if pick.lower() == "espresso" or pick == '1':
     coffee = "espresso"
 
     print("\tEspresso")
     print(f"\t\tCost: {menu['espresso']['cost']}")
     ingredients_print(coffee)
 
-elif pick == "latte":
+elif pick.lower() == "latte" or pick == '2':
     coffee = "latte"
 
     print("\tLatte")
     print(f"\t\tCost: {menu['latte']['cost']}")
     ingredients_print(coffee)
 
-elif pick == "cappuccino":
+elif pick.lower() == "cappuccino" or pick == '3':
     coffee = "cappuccino"
 
     print("\tCappuccino")
     print(f"\t\tCost: {menu['cappuccino']['cost']}")
     ingredients_print(coffee)
 
-elif pick == "options":
+elif pick.lower() == "options" or pick == '4':
     print("\tOptions:")
     print("\t\t1. Menu")
     print("\t\t2. Resources")
