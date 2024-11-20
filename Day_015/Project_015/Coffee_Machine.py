@@ -138,27 +138,25 @@ pick = input("\tYour pick: ")
 print()
 
 if pick == "espresso":
+    coffee = "espresso"
+
     print("\tEspresso")
     print(f"\t\tCost: {menu['espresso']['cost']}")
-    print("\t\tIngredients:")
-    print(f"\t\t\tWater: {menu['espresso']['ingredients']['water']}")
-    print(f"\t\t\tCoffee: {menu['espresso']['ingredients']['coffee']}")
+    ingredients_print(coffee)
 
 elif pick == "latte":
+    coffee = "latte"
+
     print("\tLatte")
     print(f"\t\tCost: {menu['latte']['cost']}")
-    print("\t\tIngredients:")
-    print(f"\t\t\tWater: {menu['latte']['ingredients']['water']}")
-    print(f"\t\t\tMilk: {menu['latte']['ingredients']['milk']}")
-    print(f"\t\t\tCoffee: {menu['latte']['ingredients']['coffee']}")
+    ingredients_print(coffee)
 
 elif pick == "cappuccino":
+    coffee = "cappuccino"
+
     print("\tCappuccino")
     print(f"\t\tCost: {menu['cappuccino']['cost']}")
-    print("\t\tIngredients:")
-    print(f"\t\t\tWater: {menu['cappuccino']['ingredients']['water']}")
-    print(f"\t\t\tMilk: {menu['cappuccino']['ingredients']['milk']}")
-    print(f"\t\t\tCoffee: {menu['cappuccino']['ingredients']['coffee']}")
+    ingredients_print(coffee)
 
 elif pick == "options":
     print("\tOptions:")
