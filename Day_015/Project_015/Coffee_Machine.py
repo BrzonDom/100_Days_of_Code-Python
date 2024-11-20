@@ -134,9 +134,9 @@ elif pick == "latte":
     print("\tLatte")
     print(f"\t\tCost: {menu['latte']['cost']}")
     print("\t\tIngredients:")
-    print(f"\t\t\tWater: {menu['cappuccino']['ingredients']['water']}")
-    print(f"\t\t\tMilk: {menu['cappuccino']['ingredients']['milk']}")
-    print(f"\t\t\tCoffee: {menu['cappuccino']['ingredients']['coffee']}")
+    print(f"\t\t\tWater: {menu['latte']['ingredients']['water']}")
+    print(f"\t\t\tMilk: {menu['latte']['ingredients']['milk']}")
+    print(f"\t\t\tCoffee: {menu['latte']['ingredients']['coffee']}")
 
 elif pick == "cappuccino":
     print("\tCappuccino")
