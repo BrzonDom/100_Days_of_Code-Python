@@ -118,6 +118,14 @@ if __name__ == "__main__":
     else:
         pick = input("Your pick: ")
 
+    account_current = account_next
+    account_next = random.choice(data)
+
+    while account_next == account_current:
+        account_next = random.choice(data)
+
+    accounts = [account_current, account_next]
+
     # max_len = 87
     #
     # print("Accounts:")
