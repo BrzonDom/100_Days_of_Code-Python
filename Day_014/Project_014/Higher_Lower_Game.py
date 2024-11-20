@@ -6,17 +6,17 @@ def account_print(account):
 
     max_len = 87
 
-    str_name = f"Name: {account['name']}"
-    str_followers = f"Followers: {account['follower_count']}k"
-    str_description = f"Description: {account['description']}"
-    str_country = f"Country: {account['country']}"
+    name = account['name']
+    followers = str(account['follower_count'])
+    description = account['description']
+    country = account['country']
 
     print("+---------------------------------------------------------------------------------------+")
-    print("|   " + str_name + ' ' * (max_len - 3 - len(str_name)) + '|')
+    print("|   Name: " + name + ' ' * (max_len - (3 + 6) - len(name)) + '|')
     print("+---------------------------------------------------------------------------------------+")
-    print("|       " + str_followers + ' ' * (max_len - 7 - len(str_followers)) + '|')
-    print("|       " + str_description + ' ' * (max_len - 7 - len(str_description)) + '|')
-    print("|       " + str_country + ' ' * (max_len - 7 - len(str_country)) + '|')
+    print("|       Followers: " + followers + ' ' * (max_len - (7 + 11) - len(followers)) + '|')
+    print("|       Description: " + description + ' ' * (max_len - (7 + 13) - len(description)) + '|')
+    print("|       Country: " + country + ' ' * (max_len - (7 + 9) - len(country)) + '|')
     print("+---------------------------------------------------------------------------------------+")
     print()
 
