@@ -80,13 +80,24 @@ accounts = [account_current, account_next]
 
 account_compare_print(accounts)
 
+score = 0
 pick = input("Your pick: ")
 
 if pick == 'a' or pick == 'A':
-    pass
+
+    if account_current["follower_count"] < account_next["follower_count"]:
+        score += 1
+
+    else:
+        quit()
 
 elif pick == 'b' or pick == 'B':
-    pass
+
+    if account_current["follower_count"] > account_next["follower_count"]:
+        score += 1
+
+    else:
+        quit()
 
 else:
     pick = input("Your pick: ")
