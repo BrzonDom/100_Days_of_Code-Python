@@ -80,11 +80,11 @@ if __name__ == "__main__":
 
     accounts = [account_current, account_next]
 
-    account_compare_print(accounts)
-
     score = 0
 
     while True:
+
+        account_compare_print(accounts)
 
         pick = input("Your pick: ")
 
@@ -129,7 +129,6 @@ if __name__ == "__main__":
 
         accounts = [account_current, account_next]
 
-        account_compare_print(accounts)
 
     # max_len = 87
     #
