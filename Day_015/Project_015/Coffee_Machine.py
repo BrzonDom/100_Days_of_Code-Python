@@ -101,10 +101,11 @@ coins = {
 #       b. Once all resources have been deducted, tell the user “Here is your latte. Enjoy!”. If
 #          latte was their choice of drink.
 
-print("Options:(espresso/latte/cappuccino):")
+print("Menu:")
 print("\t1. Espresso")
 print("\t2. Latte")
 print("\t3. Cappuccino")
+print("\t4. Options")
 print()
 pick = input("\tYour pick: ")
 print()
@@ -132,13 +133,20 @@ elif pick == "cappuccino":
     print(f"\t\t\tMilk: {menu['cappuccino']['ingredients']['milk']}")
     print(f"\t\t\tCoffee: {menu['cappuccino']['ingredients']['coffee']}")
 
+elif pick == "options":
+    print("\tOptions:")
+    print("\t\t1. Menu")
+    print("\t\t2. Resources")
+    print("\t\t3. Off")
+
 else:
     print("\tYour pick is not one of the options")
 print()
 
-print("Options:(espresso/latte/cappuccino):")
+print("Menu:")
 print("\t1. Espresso")
 print("\t2. Latte")
 print("\t3. Cappuccino")
+print("\t4. Options")
 print()
 pick = input("\tYour pick: ")
