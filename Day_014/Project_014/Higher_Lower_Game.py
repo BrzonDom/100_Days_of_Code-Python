@@ -83,48 +83,53 @@ if __name__ == "__main__":
     account_compare_print(accounts)
 
     score = 0
-    pick = input("Your pick: ")
 
-    if pick == 'a' or pick == 'A':
+    while True:
 
-        if account_current["follower_count"] > account_next["follower_count"]:
-            score += 1
-
-            print("Correct!")
-            print(f"\tScore: {score}")
-            print()
-
-        else:
-            print("Game Over!")
-            print(f"\tScore: {score}")
-
-            quit()
-
-    elif pick == 'b' or pick == 'B':
-
-        if account_current["follower_count"] < account_next["follower_count"]:
-            score += 1
-
-            print("Correct!")
-            print(f"\tScore: {score}")
-            print()
-
-        else:
-            print("Game Over!")
-            print(f"\tScore: {score}")
-
-            quit()
-
-    else:
         pick = input("Your pick: ")
 
-    account_current = account_next
-    account_next = random.choice(data)
+        if pick == 'a' or pick == 'A':
 
-    while account_next == account_current:
+            if account_current["follower_count"] > account_next["follower_count"]:
+                score += 1
+
+                print("Correct!")
+                print(f"\tScore: {score}")
+                print()
+
+            else:
+                print("Game Over!")
+                print(f"\tScore: {score}")
+
+                quit()
+
+        elif pick == 'b' or pick == 'B':
+
+            if account_current["follower_count"] < account_next["follower_count"]:
+                score += 1
+
+                print("Correct!")
+                print(f"\tScore: {score}")
+                print()
+
+            else:
+                print("Game Over!")
+                print(f"\tScore: {score}")
+
+                quit()
+
+        else:
+            pick = input("Your pick: ")
+
+        account_current = account_next
         account_next = random.choice(data)
 
-    accounts = [account_current, account_next]
+        while account_next == account_current:
+            account_next = random.choice(data)
+
+        accounts = [account_current, account_next]
+
+        account_compare_print(accounts)
 
     # max_len = 87
     #
