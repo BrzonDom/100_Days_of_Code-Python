@@ -126,8 +126,6 @@ def ingredients_print(coffee):
             print(f"\t\t\t{ingredient.capitalize()}: {menu[coffee]['ingredients'][ingredient]}")
 
 
-ingredients_print("cappuccino")
-
 print("Menu:")
 print("\t1. Espresso")
 print("\t2. Latte")
