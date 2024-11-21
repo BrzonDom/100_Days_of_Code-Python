@@ -126,65 +126,67 @@ def ingredients_print(coffee):
             print(f"\t\t\t{ingredient.capitalize()}: {menu[coffee]['ingredients'][ingredient]}")
 
 
-print("Menu:")
-print("\t1. Espresso")
-print("\t2. Latte")
-print("\t3. Cappuccino")
-print("\t4. Options")
-print()
-pick = input("\tYour pick: ")
-print()
+while True:
 
-if pick.lower() == "espresso" or pick == '1':
-    coffee = "espresso"
+    print("Menu:")
+    print("\t1. Espresso")
+    print("\t2. Latte")
+    print("\t3. Cappuccino")
+    print("\t4. Options")
+    print()
+    pick = input("\tYour pick: ")
+    print()
 
-    print("\tEspresso")
-    print(f"\t\tCost: {menu['espresso']['cost']}")
-    ingredients_print(coffee)
+    if pick.lower() == "espresso" or pick == '1':
+        coffee = "espresso"
 
-elif pick.lower() == "latte" or pick == '2':
-    coffee = "latte"
+        print("\tEspresso")
+        print(f"\t\tCost: {menu['espresso']['cost']}")
+        ingredients_print(coffee)
 
-    print("\tLatte")
-    print(f"\t\tCost: {menu['latte']['cost']}")
-    ingredients_print(coffee)
+    elif pick.lower() == "latte" or pick == '2':
+        coffee = "latte"
 
-elif pick.lower() == "cappuccino" or pick == '3':
-    coffee = "cappuccino"
+        print("\tLatte")
+        print(f"\t\tCost: {menu['latte']['cost']}")
+        ingredients_print(coffee)
 
-    print("\tCappuccino")
-    print(f"\t\tCost: {menu['cappuccino']['cost']}")
-    ingredients_print(coffee)
+    elif pick.lower() == "cappuccino" or pick == '3':
+        coffee = "cappuccino"
 
-elif pick.lower() == "options" or pick == '4':
-    print("\tOptions:")
-    print("\t\t1. Menu")
-    print("\t\t2. Resources")
-    print("\t\t3. Espresso ingredients")
-    print("\t\t4. Latte ingredients")
-    print("\t\t5. Cappuccino ingredients")
-    print("\t\t6. Off")
+        print("\tCappuccino")
+        print(f"\t\tCost: {menu['cappuccino']['cost']}")
+        ingredients_print(coffee)
 
-    choice = input("\tYour pick: ")
+    elif pick.lower() == "options" or pick == '4':
+        print("\tOptions:")
+        print("\t\t1. Menu")
+        print("\t\t2. Resources")
+        print("\t\t3. Espresso ingredients")
+        print("\t\t4. Latte ingredients")
+        print("\t\t5. Cappuccino ingredients")
+        print("\t\t6. Off")
 
-    if choice.lower() == "menu" or choice == '1':
-        pass
+        choice = input("\tYour pick: ")
 
-    elif choice.lower() == "resources" or choice == '2':
-        pass
+        if choice.lower() == "menu" or choice == '1':
+            pass
 
-    elif choice.lower() == "resources" or choice == '3':
-        pass
+        elif choice.lower() == "resources" or choice == '2':
+            pass
 
-    elif choice.lower() == "resources" or choice == '4':
-        pass
+        elif choice.lower() == "resources" or choice == '3':
+            pass
 
-    elif choice.lower() == "resources" or choice == '5':
-        pass
+        elif choice.lower() == "resources" or choice == '4':
+            pass
 
-    elif choice.lower() == "resources" or choice == '6':
-        pass
+        elif choice.lower() == "resources" or choice == '5':
+            pass
 
-else:
-    print("\tYour pick is not one of the options")
-print()
+        elif choice.lower() == "resources" or choice == '6':
+            pass
+
+    else:
+        print("\tYour pick is not one of the options")
+    print()
