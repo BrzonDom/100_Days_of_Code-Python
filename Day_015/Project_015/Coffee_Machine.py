@@ -167,6 +167,26 @@ elif pick.lower() == "options" or pick == '4':
     print("\t\t5. Cappuccino ingredients")
     print("\t\t6. Off")
 
+    choice = input("\tYour pick: ")
+
+    if choice.lower() == "menu" or choice == '1':
+        pass
+
+    elif choice.lower() == "resources" or choice == '2':
+        pass
+
+    elif choice.lower() == "resources" or choice == '3':
+        pass
+
+    elif choice.lower() == "resources" or choice == '4':
+        pass
+
+    elif choice.lower() == "resources" or choice == '5':
+        pass
+
+    elif choice.lower() == "resources" or choice == '6':
+        pass
+
 else:
     print("\tYour pick is not one of the options")
 print()
