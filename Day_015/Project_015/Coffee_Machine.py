@@ -188,11 +188,3 @@ elif pick.lower() == "options" or pick == '4':
 else:
     print("\tYour pick is not one of the options")
 print()
-
-print("Menu:")
-print("\t1. Espresso")
-print("\t2. Latte")
-print("\t3. Cappuccino")
-print("\t4. Options")
-print()
-pick = input("\tYour pick: ")
