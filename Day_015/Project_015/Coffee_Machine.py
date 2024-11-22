@@ -175,16 +175,16 @@ while True:
         elif choice.lower() == "resources" or choice == '2':
             pass
 
-        elif choice.lower() == "resources" or choice == '3':
+        elif choice.lower() == "espresso" or choice == '3':
             pass
 
-        elif choice.lower() == "resources" or choice == '4':
+        elif choice.lower() == "latte" or choice == '4':
             pass
 
-        elif choice.lower() == "resources" or choice == '5':
+        elif choice.lower() == "cappuccino" or choice == '5':
             pass
 
-        elif choice.lower() == "resources" or choice == '6':
+        elif choice.lower() == "off" or choice == '6':
             pass
 
     else:
