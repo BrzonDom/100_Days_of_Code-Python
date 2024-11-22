@@ -166,6 +166,7 @@ while True:
         print("\t\t4. Latte ingredients")
         print("\t\t5. Cappuccino ingredients")
         print("\t\t6. Off")
+        print()
 
         choice = input("\tYour pick: ")
 
@@ -176,13 +177,13 @@ while True:
             pass
 
         elif choice.lower() == "espresso" or choice == '3':
-            pass
+            ingredients_print("espresso")
 
         elif choice.lower() == "latte" or choice == '4':
-            pass
+            ingredients_print("latte")
 
         elif choice.lower() == "cappuccino" or choice == '5':
-            pass
+            ingredients_print("cappuccino")
 
         elif choice.lower() == "off" or choice == '6':
             pass
