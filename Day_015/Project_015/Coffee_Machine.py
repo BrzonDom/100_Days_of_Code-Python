@@ -104,26 +104,11 @@ coins = {
 
 def ingredients_print(coffee):
 
-    if coffee == "espresso":
-        ingredients = menu[coffee]["ingredients"].keys()
+    ingredients = menu[coffee]["ingredients"].keys()
 
-        print("\t\tIngredients:")
-        for ingredient in ingredients:
-            print(f"\t\t\t{ingredient.capitalize()}: {menu[coffee]['ingredients'][ingredient]}")
-
-    elif coffee == "latte":
-        ingredients = menu[coffee]["ingredients"].keys()
-
-        print("\t\tIngredients:")
-        for ingredient in ingredients:
-            print(f"\t\t\t{ingredient.capitalize()}: {menu[coffee]['ingredients'][ingredient]}")
-
-    elif coffee == "cappuccino":
-        ingredients = menu[coffee]["ingredients"].keys()
-
-        print("\t\tIngredients:")
-        for ingredient in ingredients:
-            print(f"\t\t\t{ingredient.capitalize()}: {menu[coffee]['ingredients'][ingredient]}")
+    print("\t\tIngredients:")
+    for ingredient in ingredients:
+        print(f"\t\t\t{ingredient.capitalize()}: {menu[coffee]['ingredients'][ingredient]}")
 
 
 while True:
