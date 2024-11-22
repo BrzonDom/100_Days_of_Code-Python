@@ -172,7 +172,7 @@ while True:
         print()
 
         if choice.lower() == "menu" or choice == '1':
-            pass
+            continue
 
         elif choice.lower() == "resources" or choice == '2':
             pass
@@ -190,7 +190,7 @@ while True:
             ingredients_print("cappuccino")
 
         elif choice.lower() == "off" or choice == '6':
-            pass
+            break
 
     else:
         print("\tYour pick is not one of the options")
