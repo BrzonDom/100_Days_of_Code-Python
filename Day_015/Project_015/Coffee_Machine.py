@@ -114,9 +114,9 @@ def ingredients_print(coffee):
 while True:
 
     print("Menu:")
-    print("\t1. Espresso")
-    print("\t2. Latte")
-    print("\t3. Cappuccino")
+    print(f"\t1. Espresso          ${menu['espresso']['cost']}")
+    print(f"\t2. Latte             ${menu['latte']['cost']}")
+    print(f"\t3. Cappuccino        ${menu['cappuccino']['cost']} ")
     print("\t4. Options")
     print()
 
@@ -127,19 +127,19 @@ while True:
         coffee = "espresso"
 
         print("\tEspresso")
-        print(f"\t\tCost: {menu['espresso']['cost']}")
+        print(f"\t\tCost: ${menu['espresso']['cost']}")
 
     elif pick.lower() == "latte" or pick == '2':
         coffee = "latte"
 
         print("\tLatte")
-        print(f"\t\tCost: {menu['latte']['cost']}")
+        print(f"\t\tCost: ${menu['latte']['cost']}")
 
     elif pick.lower() == "cappuccino" or pick == '3':
         coffee = "cappuccino"
 
         print("\tCappuccino")
-        print(f"\t\tCost: {menu['cappuccino']['cost']}")
+        print(f"\t\tCost: ${menu['cappuccino']['cost']}")
 
     elif pick.lower() == "options" or pick == '4':
         print("\tOptions:")
