@@ -126,11 +126,23 @@ while True:
         print("\tLatte")
         print(f"\t\tCost: ${menu['latte']['cost']}")
 
+        if (menu['latte']['ingredients']['water'] < resources['water'] or
+            menu['latte']['ingredients']['milk'] < resources['milk'] or
+            menu['latte']['ingredients']['coffee'] < resources['coffee']):
+
+            print("Not enough resources")
+
     elif pick.lower() == "cappuccino" or pick == '3':
         coffee = "cappuccino"
 
         print("\tCappuccino")
         print(f"\t\tCost: ${menu['cappuccino']['cost']}")
+
+        if (menu['cappuccino']['ingredients']['water'] < resources['water'] or
+            menu['cappuccino']['ingredients']['milk'] < resources['milk'] or
+            menu['cappuccino']['ingredients']['coffee'] < resources['coffee']):
+
+            print("Not enough resources")
 
     elif pick.lower() == "options" or pick == '4':
         print("\tOptions:")
