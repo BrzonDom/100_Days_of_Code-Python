@@ -115,7 +115,7 @@ while True:
     print("\t4. Options")
     print()
 
-    pick = input("\tYour pick: ")
+    pick = input("Your pick: ")
     print()
 
     if pick.lower() == "espresso" or pick == '1':
@@ -146,25 +146,32 @@ while True:
         print("\t\t6. Off")
         print()
 
-        choice = input("\tYour pick: ")
+        choice = input("Your pick: ")
         print()
 
         if choice.lower() == "menu" or choice == '1':
             continue
 
         elif choice.lower() == "resources" or choice == '2':
-            pass
+            print("\tResources:")
+            print(f"\t\tWater: {resources['water']}")
+            print(f"\t\tMilk: {resources['milk']}")
+            print(f"\t\tCoffee: {resources['coffee']}")
+
+            # "water": 300,
+            # "milk": 200,
+            # "coffee": 100,
 
         elif choice.lower() == "espresso" or choice == '3':
-            print("\tEspresso:")
+            print("\tEspresso")
             ingredients_print("espresso")
 
         elif choice.lower() == "latte" or choice == '4':
-            print("\tLatte:")
+            print("\tLatte")
             ingredients_print("latte")
 
         elif choice.lower() == "cappuccino" or choice == '5':
-            print("\tCappuccino:")
+            print("\tCappuccino")
             ingredients_print("cappuccino")
 
         elif choice.lower() == "off" or choice == '6':
