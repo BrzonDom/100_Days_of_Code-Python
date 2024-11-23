@@ -115,6 +115,11 @@ while True:
         print("\tEspresso")
         print(f"\t\tCost: ${menu['espresso']['cost']}")
 
+        if (menu['espresso']['ingredients']['water'] < resources['water'] or
+            menu['espresso']['ingredients']['coffee'] < resources['coffee']):
+
+            print("Not enough resources")
+
     elif pick.lower() == "latte" or pick == '2':
         coffee = "latte"
 
