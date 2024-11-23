@@ -39,11 +39,6 @@ coins = {
 
 
 # TODO:
-#   2. Turn off the Coffee Machine by entering “off” to the prompt.
-#       a. For maintainers of the coffee machine, they can use “off” as the secret word to turn off
-#          the machine. Your code should end execution when this happens.
-
-# TODO:
 #   3. Print report.
 #       a. When the user enters “report” to the prompt, a report should be generated that shows
 #          the current resource values. e.g.
