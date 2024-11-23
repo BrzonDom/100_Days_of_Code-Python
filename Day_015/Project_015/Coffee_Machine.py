@@ -39,15 +39,6 @@ coins = {
 
 
 # TODO:
-#   3. Print report.
-#       a. When the user enters “report” to the prompt, a report should be generated that shows
-#          the current resource values. e.g.
-#          Water: 100ml
-#          Milk: 50ml
-#          Coffee: 76g
-#          Money: $2.5
-
-# TODO:
 #   4. Check resources sufficient?
 #       a. When the user chooses a drink, the program should check if there are enough
 #          resources to make that drink.
@@ -157,10 +148,6 @@ while True:
             print(f"\t\tWater: {resources['water']}")
             print(f"\t\tMilk: {resources['milk']}")
             print(f"\t\tCoffee: {resources['coffee']}")
-
-            # "water": 300,
-            # "milk": 200,
-            # "coffee": 100,
 
         elif choice.lower() == "espresso" or choice == '3':
             print("\tEspresso")
