@@ -39,14 +39,6 @@ coins = {
 
 
 # TODO:
-#   4. Check resources sufficient?
-#       a. When the user chooses a drink, the program should check if there are enough
-#          resources to make that drink.
-#       b. E.g. if Latte requires 200ml water but there is only 100ml left in the machine. It should
-#          not continue to make the drink but print: “Sorry there is not enough water.”
-#       c. The same should happen if another resource is depleted, e.g. milk or coffee.
-
-# TODO:
 #   5. Process coins.
 #       a. If there are sufficient resources to make the drink selected, then the program should
 #          prompt the user to insert coins.
