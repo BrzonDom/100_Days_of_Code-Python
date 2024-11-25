@@ -89,6 +89,11 @@ def ingredients_print(coffee):
         print(f"\t\t\t{ingredient.capitalize()}: {menu[coffee]['ingredients'][ingredient]}")
 
 
+def ingredients_check():
+
+    pass
+
+
 while True:
 
     print("Menu:")
