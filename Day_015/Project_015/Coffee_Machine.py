@@ -89,7 +89,7 @@ def ingredients_print(coffee):
         print(f"\t\t\t{ingredient.capitalize()}: {menu[coffee]['ingredients'][ingredient]}")
 
 
-def ingredients_check():
+def ingredients_check(coffee):
 
     pass
 
