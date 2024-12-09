@@ -137,6 +137,13 @@ def money_input(coffee):
     nickel_count = int(input("\tHow many nickels:  "))
     penny_count = int(input("\tHow many penny:    "))
 
+    quarter_money = 0.25 * quarter_count
+    dimes_money = 0.1 * dimes_count
+    nickel_money = 0.05 * nickel_count
+    penny_money = 0.01 * penny_count
+
+    money = quarter_money + dimes_money + nickel_money + penny_money
+
 
 while True:
 
