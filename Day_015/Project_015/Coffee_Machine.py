@@ -136,6 +136,7 @@ def money_input(coffee):
     dimes_count = int(input("\tHow many dimes:    "))
     nickel_count = int(input("\tHow many nickels:  "))
     penny_count = int(input("\tHow many penny:    "))
+    print()
 
     quarter_money = 0.25 * quarter_count
     dimes_money = 0.1 * dimes_count
@@ -143,6 +144,13 @@ def money_input(coffee):
     penny_money = 0.01 * penny_count
 
     money = quarter_money + dimes_money + nickel_money + penny_money
+
+    if money >= menu[coffee]['cost']:
+        print("\tMaking coffee")
+
+    else:
+        print("\tYou don't have enough money")
+        print()
 
 
 while True:
