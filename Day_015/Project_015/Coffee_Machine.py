@@ -150,9 +150,13 @@ def money_input(coffee):
         print(f"\nHere is your {coffee.capitalize()}")
         print()
 
+        return True
+
     else:
         print("\tYou don't have enough money")
         print()
+
+        return False
 
 
 while True:
