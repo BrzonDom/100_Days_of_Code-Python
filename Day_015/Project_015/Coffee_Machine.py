@@ -146,7 +146,9 @@ def money_input(coffee):
     money = quarter_money + dimes_money + nickel_money + penny_money
 
     if money >= menu[coffee]['cost']:
-        print("\tMaking coffee")
+        print(f"\tYou inserted ${round(money, 2)}")
+        print(f"\nHere is your {coffee.capitalize()}")
+        print()
 
     else:
         print("\tYou don't have enough money")
