@@ -177,27 +177,6 @@ while True:
         if enough:
             money_input(coffee)
 
-            # print("Please insert coins")
-            # quarter_count = int(input("\tHow many quarters: "))
-            # dimes_count = int(input("\tHow many dimes:    "))
-            # nickel_count = int(input("\tHow many nickels:  "))
-            # penny_count = int(input("\tHow many penny:    "))
-            # print()
-            #
-            # quarter_money = 0.25 * quarter_count
-            # dimes_money = 0.1 * dimes_count
-            # nickel_money = 0.05 * nickel_count
-            # penny_money = 0.01 * penny_count
-            #
-            # money = quarter_money + dimes_money + nickel_money + penny_money
-            #
-            # if money >= menu[coffee]['cost']:
-            #     print("\tMaking coffee")
-            #
-            # else:
-            #     print("\tYou don't have enough money")
-            #     print()
-
     elif pick.lower() == "latte" or pick == '2':
         coffee = "latte"
 
@@ -210,27 +189,6 @@ while True:
         if enough:
             money_input(coffee)
 
-            # print("Please insert coins")
-            # quarter_count = int(input("\tHow many quarters: "))
-            # dimes_count = int(input("\tHow many dimes:    "))
-            # nickel_count = int(input("\tHow many nickels:  "))
-            # penny_count = int(input("\tHow many penny:    "))
-            # print()
-            #
-            # quarter_money = 0.25 * quarter_count
-            # dimes_money = 0.1 * dimes_count
-            # nickel_money = 0.05 * nickel_count
-            # penny_money = 0.01 * penny_count
-            #
-            # money = quarter_money + dimes_money + nickel_money + penny_money
-            #
-            # if money >= menu[coffee]['cost']:
-            #     print("\tMaking coffee")
-            #
-            # else:
-            #     print("\tYou don't have enough money")
-            #     print()
-
     elif pick.lower() == "cappuccino" or pick == '3':
         coffee = "cappuccino"
 
@@ -242,27 +200,6 @@ while True:
 
         if enough:
             money_input(coffee)
-
-            # print("Please insert coins")
-            # quarter_count = int(input("\tHow many quarters: "))
-            # dimes_count = int(input("\tHow many dimes:    "))
-            # nickel_count = int(input("\tHow many nickels:  "))
-            # penny_count = int(input("\tHow many penny:    "))
-            # print()
-            #
-            # quarter_money = 0.25 * quarter_count
-            # dimes_money = 0.1 * dimes_count
-            # nickel_money = 0.05 * nickel_count
-            # penny_money = 0.01 * penny_count
-            #
-            # money = quarter_money + dimes_money + nickel_money + penny_money
-            #
-            # if money >= menu[coffee]['cost']:
-            #     print("\tMaking coffee")
-            #
-            # else:
-            #     print("\tYou don't have enough money")
-            #     print()
 
     elif pick.lower() == "options" or pick == '4':
         print("\tOptions:")
