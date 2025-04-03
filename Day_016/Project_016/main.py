@@ -84,26 +84,19 @@ if __name__ == "__main__":
         exit()
 
     CoffeeMachine = CoffeeMaker()
-    MoneyMachine = MoneyMachine()
     Menu = Menu()
 
     if user_input == "report":
         CoffeeMachine.report()
     elif user_input == "cappuccino":
         drink = Menu.find_drink("cappuccino")
-        if CoffeeMachine.is_resource_sufficient(drink):
-            print(True)
-        else:
-            print(False)
+        CoffeeMachine.is_resource_sufficient(drink)
+        MoneyMachine = MoneyMachine()
     elif user_input == "espresso":
         drink = Menu.find_drink("espresso")
-        if CoffeeMachine.is_resource_sufficient(drink):
-            print(True)
-        else:
-            print(False)
+        CoffeeMachine.is_resource_sufficient(drink)
+        MoneyMachine = MoneyMachine()
     elif user_input == "latte":
         drink = Menu.find_drink("latte")
-        if CoffeeMachine.is_resource_sufficient(drink):
-            print(True)
-        else:
-            print(False)
+        CoffeeMachine.is_resource_sufficient(drink)
+        MoneyMachine = MoneyMachine()
