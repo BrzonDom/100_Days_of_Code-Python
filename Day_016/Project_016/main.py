@@ -92,11 +92,14 @@ if __name__ == "__main__":
         drink = Menu.find_drink("cappuccino")
         CoffeeMachine.is_resource_sufficient(drink)
         MoneyMachine = MoneyMachine()
+        MoneyMachine.process_coins()
     elif user_input == "espresso":
         drink = Menu.find_drink("espresso")
         CoffeeMachine.is_resource_sufficient(drink)
         MoneyMachine = MoneyMachine()
+        MoneyMachine.process_coins()
     elif user_input == "latte":
         drink = Menu.find_drink("latte")
         CoffeeMachine.is_resource_sufficient(drink)
         MoneyMachine = MoneyMachine()
+        MoneyMachine.process_coins()
