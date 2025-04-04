@@ -91,7 +91,14 @@ def ingredients_print(coffee):
 
 def ingredients_check(coffee):
 
-    pass
+    if coffee == "espresso":
+        pass
+
+    elif coffee == "latte":
+        pass
+
+    elif coffee == "cappuccino":
+        pass
 
 
 while True:
