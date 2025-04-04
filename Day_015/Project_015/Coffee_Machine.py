@@ -158,6 +158,8 @@ while True:
 
         enough = resources_check(coffee)
 
+        print("Please insert coins")
+
     elif pick.lower() == "latte" or pick == '2':
         coffee = "latte"
 
@@ -167,6 +169,8 @@ while True:
 
         enough = resources_check(coffee)
 
+        print("Please insert coins")
+
     elif pick.lower() == "cappuccino" or pick == '3':
         coffee = "cappuccino"
 
@@ -175,6 +179,8 @@ while True:
         print()
 
         enough = resources_check(coffee)
+
+        print("Please insert coins")
 
     elif pick.lower() == "options" or pick == '4':
         print("\tOptions:")
