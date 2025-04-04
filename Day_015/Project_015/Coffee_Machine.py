@@ -165,6 +165,11 @@ while True:
             nickel_count = int(input("\tHow many nickels:  "))
             penny_count = int(input("\tHow many penny:    "))
 
+            quarter_money = 0.25 * quarter_count
+            dimes_money = 0.1 * dimes_count
+            nickel_money = 0.05 * nickel_count
+            penny_money = 0.01 * penny_count
+
     elif pick.lower() == "latte" or pick == '2':
         coffee = "latte"
 
@@ -181,6 +186,11 @@ while True:
             nickel_count = int(input("\tHow many nickels:  "))
             penny_count = int(input("\tHow many penny:    "))
 
+            quarter_money = 0.25 * quarter_count
+            dimes_money = 0.1 * dimes_count
+            nickel_money = 0.05 * nickel_count
+            penny_money = 0.01 * penny_count
+
     elif pick.lower() == "cappuccino" or pick == '3':
         coffee = "cappuccino"
 
@@ -196,6 +206,11 @@ while True:
             dimes_count = int(input("\tHow many dimes:    "))
             nickel_count = int(input("\tHow many nickels:  "))
             penny_count = int(input("\tHow many penny:    "))
+
+            quarter_money = 0.25 * quarter_count
+            dimes_money = 0.1 * dimes_count
+            nickel_money = 0.05 * nickel_count
+            penny_money = 0.01 * penny_count
 
     elif pick.lower() == "options" or pick == '4':
         print("\tOptions:")
