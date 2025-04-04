@@ -94,32 +94,32 @@ def ingredients_check(coffee):
     if coffee == "espresso":
 
         if menu['espresso']['ingredients']['water'] < resources['water']:
-            print("Not enough water")
+            print("\tNot enough water")
 
         if menu['espresso']['ingredients']['coffee'] < resources['coffee']:
-            print("Not enough coffee")
+            print("\tNot enough coffee")
 
     elif coffee == "latte":
 
         if menu['latte']['ingredients']['water'] < resources['water']:
-            print("Not enough water")
+            print("\tNot enough water")
 
         if menu['latte']['ingredients']['milk'] < resources['milk']:
-            print("Not enough milk")
+            print("\tNot enough milk")
 
         if menu['latte']['ingredients']['coffee'] < resources['coffee']:
-            print("Not enough coffee")
+            print("\tNot enough coffee")
 
     elif coffee == "cappuccino":
 
         if menu['cappuccino']['ingredients']['water'] < resources['water']:
-            print("Not enough water")
+            print("\tNot enough water")
 
         if menu['cappuccino']['ingredients']['milk'] < resources['milk']:
-            print("Not enough milk")
+            print("\tNot enough milk")
 
         if menu['cappuccino']['ingredients']['coffee'] < resources['coffee']:
-            print("Not enough coffee")
+            print("\tNot enough coffee")
 
 
 while True:
@@ -139,6 +139,7 @@ while True:
 
         print("\tEspresso")
         print(f"\t\tCost: ${menu['espresso']['cost']}")
+        print()
 
         ingredients_check(coffee)
 
@@ -153,6 +154,7 @@ while True:
 
         print("\tLatte")
         print(f"\t\tCost: ${menu['latte']['cost']}")
+        print()
 
         ingredients_check(coffee)
 
@@ -170,6 +172,7 @@ while True:
 
         print("\tCappuccino")
         print(f"\t\tCost: ${menu['cappuccino']['cost']}")
+        print()
 
         ingredients_check(coffee)
 
