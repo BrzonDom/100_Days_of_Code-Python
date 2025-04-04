@@ -95,39 +95,39 @@ def resources_check(coffee):
 
     if coffee == "espresso":
 
-        if menu['espresso']['ingredients']['water'] < resources['water']:
+        if menu['espresso']['ingredients']['water'] > resources['water']:
             print("\tNot enough water")
             enough = False
 
-        if menu['espresso']['ingredients']['coffee'] < resources['coffee']:
+        if menu['espresso']['ingredients']['coffee'] > resources['coffee']:
             print("\tNot enough coffee")
             enough = False
 
     elif coffee == "latte":
 
-        if menu['latte']['ingredients']['water'] < resources['water']:
+        if menu['latte']['ingredients']['water'] > resources['water']:
             print("\tNot enough water")
             enough = False
 
-        if menu['latte']['ingredients']['milk'] < resources['milk']:
+        if menu['latte']['ingredients']['milk'] > resources['milk']:
             print("\tNot enough milk")
             enough = False
 
-        if menu['latte']['ingredients']['coffee'] < resources['coffee']:
+        if menu['latte']['ingredients']['coffee'] > resources['coffee']:
             print("\tNot enough coffee")
             enough = False
 
     elif coffee == "cappuccino":
 
-        if menu['cappuccino']['ingredients']['water'] < resources['water']:
+        if menu['cappuccino']['ingredients']['water'] > resources['water']:
             print("\tNot enough water")
             enough = False
 
-        if menu['cappuccino']['ingredients']['milk'] < resources['milk']:
+        if menu['cappuccino']['ingredients']['milk'] > resources['milk']:
             print("\tNot enough milk")
             enough = False
 
-        if menu['cappuccino']['ingredients']['coffee'] < resources['coffee']:
+        if menu['cappuccino']['ingredients']['coffee'] > resources['coffee']:
             print("\tNot enough coffee")
             enough = False
 
