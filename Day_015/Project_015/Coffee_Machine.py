@@ -129,6 +129,10 @@ def resources_check(coffee):
     return enough
 
 
+def money_input():
+    pass
+
+
 while True:
 
     print("Menu:")
