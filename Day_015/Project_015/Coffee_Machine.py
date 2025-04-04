@@ -131,6 +131,9 @@ def resources_check(coffee):
             print("\tNot enough coffee")
             enough = False
 
+    if enough:
+        print()
+
     return enough
 
 
