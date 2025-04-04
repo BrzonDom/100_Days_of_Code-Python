@@ -164,6 +164,7 @@ while True:
             dimes_count = int(input("\tHow many dimes:    "))
             nickel_count = int(input("\tHow many nickels:  "))
             penny_count = int(input("\tHow many penny:    "))
+            print()
 
             quarter_money = 0.25 * quarter_count
             dimes_money = 0.1 * dimes_count
@@ -173,7 +174,10 @@ while True:
             money = quarter_money + dimes_money + nickel_money + penny_money
 
             if money >= menu[coffee]['cost']:
-                continue
+                print("\tMaking coffee")
+
+            else:
+                print("\tYou don't have enough money")
 
     elif pick.lower() == "latte" or pick == '2':
         coffee = "latte"
@@ -190,6 +194,7 @@ while True:
             dimes_count = int(input("\tHow many dimes:    "))
             nickel_count = int(input("\tHow many nickels:  "))
             penny_count = int(input("\tHow many penny:    "))
+            print()
 
             quarter_money = 0.25 * quarter_count
             dimes_money = 0.1 * dimes_count
@@ -199,7 +204,10 @@ while True:
             money = quarter_money + dimes_money + nickel_money + penny_money
 
             if money >= menu[coffee]['cost']:
-                continue
+                print("\tMaking coffee")
+
+            else:
+                print("\tYou don't have enough money")
 
     elif pick.lower() == "cappuccino" or pick == '3':
         coffee = "cappuccino"
@@ -216,6 +224,7 @@ while True:
             dimes_count = int(input("\tHow many dimes:    "))
             nickel_count = int(input("\tHow many nickels:  "))
             penny_count = int(input("\tHow many penny:    "))
+            print()
 
             quarter_money = 0.25 * quarter_count
             dimes_money = 0.1 * dimes_count
@@ -225,7 +234,10 @@ while True:
             money = quarter_money + dimes_money + nickel_money + penny_money
 
             if money >= menu[coffee]['cost']:
-                continue
+                print("\tMaking coffee")
+
+            else:
+                print("\tYou don't have enough money")
 
     elif pick.lower() == "options" or pick == '4':
         print("\tOptions:")
