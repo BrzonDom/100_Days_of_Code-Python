@@ -76,9 +76,16 @@ Coffee Machine Program Requirements:
        
 """
 
+
 if __name__ == "__main__":
     user_input = input("What would you like? (espresso/latte/cappuccino): ")
+
+    if user_input == "off":
+        exit()
 
     CoffeeMachine = CoffeeMaker()
     MoneyMachine = MoneyMachine()
     Menu = Menu()
+
+    if user_input == "report":
+        CoffeeMachine.report()
