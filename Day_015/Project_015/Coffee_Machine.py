@@ -123,7 +123,7 @@ def resources_check(coffee):
             print("\tNot enough coffee")
             enough = False
 
-    if enough:
+    if not enough:
         print()
 
     return enough
@@ -170,6 +170,7 @@ while True:
 
             else:
                 print("\tYou don't have enough money")
+                print()
 
     elif pick.lower() == "latte" or pick == '2':
         coffee = "latte"
@@ -200,6 +201,7 @@ while True:
 
             else:
                 print("\tYou don't have enough money")
+                print()
 
     elif pick.lower() == "cappuccino" or pick == '3':
         coffee = "cappuccino"
@@ -230,6 +232,7 @@ while True:
 
             else:
                 print("\tYou don't have enough money")
+                print()
 
     elif pick.lower() == "options" or pick == '4':
         print("\tOptions:")
