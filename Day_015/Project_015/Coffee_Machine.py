@@ -158,11 +158,12 @@ while True:
 
         enough = resources_check(coffee)
 
-        print("Please insert coins")
-        quarter_count = int(input("\tHow many quarters: "))
-        dimes_count = int(input("\tHow many dimes:      "))
-        nickel_count = int(input("\tHow many nickels:   "))
-        penny_count = int(input("\tHow many penny:      "))
+        if enough:
+            print("Please insert coins")
+            quarter_count = int(input("\tHow many quarters: "))
+            dimes_count = int(input("\tHow many dimes:      "))
+            nickel_count = int(input("\tHow many nickels:   "))
+            penny_count = int(input("\tHow many penny:      "))
 
     elif pick.lower() == "latte" or pick == '2':
         coffee = "latte"
@@ -173,11 +174,12 @@ while True:
 
         enough = resources_check(coffee)
 
-        print("Please insert coins")
-        quarter_count = int(input("\tHow many quarters: "))
-        dimes_count = int(input("\tHow many dimes:      "))
-        nickel_count = int(input("\tHow many nickels:   "))
-        penny_count = int(input("\tHow many penny:      "))
+        if enough:
+            print("Please insert coins")
+            quarter_count = int(input("\tHow many quarters: "))
+            dimes_count = int(input("\tHow many dimes:      "))
+            nickel_count = int(input("\tHow many nickels:   "))
+            penny_count = int(input("\tHow many penny:      "))
 
     elif pick.lower() == "cappuccino" or pick == '3':
         coffee = "cappuccino"
@@ -188,11 +190,12 @@ while True:
 
         enough = resources_check(coffee)
 
-        print("Please insert coins")
-        quarter_count = int(input("\tHow many quarters: "))
-        dimes_count = int(input("\tHow many dimes:      "))
-        nickel_count = int(input("\tHow many nickels:   "))
-        penny_count = int(input("\tHow many penny:      "))
+        if enough:
+            print("Please insert coins")
+            quarter_count = int(input("\tHow many quarters: "))
+            dimes_count = int(input("\tHow many dimes:      "))
+            nickel_count = int(input("\tHow many nickels:   "))
+            penny_count = int(input("\tHow many penny:      "))
 
     elif pick.lower() == "options" or pick == '4':
         print("\tOptions:")
