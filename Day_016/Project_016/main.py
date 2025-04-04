@@ -89,3 +89,10 @@ if __name__ == "__main__":
 
     if user_input == "report":
         CoffeeMachine.report()
+    elif user_input == "cappuccino":
+        pass
+    elif user_input == "espresso":
+        pass
+    elif user_input == "latte":
+        pass
+
