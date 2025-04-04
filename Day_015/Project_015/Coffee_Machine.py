@@ -183,6 +183,10 @@ while True:
         if enough_resources:
             enough_money = money_input(coffee)
 
+            if enough_money:
+                resources["water"] -= menu["espresso"]["ingredients"]["water"]
+                resources["coffee"] -= menu["espresso"]["ingredients"]["coffee"]
+
     elif pick.lower() == "latte" or pick == '2':
         coffee = "latte"
 
@@ -195,6 +199,11 @@ while True:
         if enough_resources:
             enough_money = money_input(coffee)
 
+            if enough_money:
+                resources["water"] -= menu["latte"]["ingredients"]["water"]
+                resources["milk"] -= menu["latte"]["ingredients"]["milk"]
+                resources["coffee"] -= menu["latte"]["ingredients"]["coffee"]
+
     elif pick.lower() == "cappuccino" or pick == '3':
         coffee = "cappuccino"
 
@@ -206,6 +215,12 @@ while True:
 
         if enough_resources:
             enough_money = money_input(coffee)
+
+            if enough_money:
+                resources["water"] -= menu["cappuccino"]["ingredients"]["water"]
+                resources["milk"] -= menu["cappuccino"]["ingredients"]["milk"]
+                resources["coffee"] -= menu["cappuccino"]["ingredients"]["coffee"]
+
 
     elif pick.lower() == "options" or pick == '4':
         print("\tOptions:")
