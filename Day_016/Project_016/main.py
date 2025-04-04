@@ -90,9 +90,20 @@ if __name__ == "__main__":
     if user_input == "report":
         CoffeeMachine.report()
     elif user_input == "cappuccino":
-        pass
+        drink = Menu.find_drink("cappuccino")
+        if CoffeeMachine.is_resource_sufficient(drink):
+            print(True)
+        else:
+            print(False)
     elif user_input == "espresso":
-        pass
+        drink = Menu.find_drink("espresso")
+        if CoffeeMachine.is_resource_sufficient(drink):
+            print(True)
+        else:
+            print(False)
     elif user_input == "latte":
-        pass
-
+        drink = Menu.find_drink("latte")
+        if CoffeeMachine.is_resource_sufficient(drink):
+            print(True)
+        else:
+            print(False)
