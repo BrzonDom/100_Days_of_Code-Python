@@ -175,7 +175,7 @@ while True:
         coffee = "espresso"
 
         print("\tEspresso")
-        print(f"\t\tCost: ${menu['espresso']['cost']}")
+        print(f"\t\tCost: ${menu[coffee]['cost']}")
         print()
 
         enough_resources = resources_check(coffee)
@@ -184,14 +184,14 @@ while True:
             enough_money = money_input(coffee)
 
             if enough_money:
-                resources["water"] -= menu["espresso"]["ingredients"]["water"]
-                resources["coffee"] -= menu["espresso"]["ingredients"]["coffee"]
+                resources["water"] -= menu[coffee]["ingredients"]["water"]
+                resources["coffee"] -= menu[coffee]["ingredients"]["coffee"]
 
     elif pick.lower() == "latte" or pick == '2':
         coffee = "latte"
 
         print("\tLatte")
-        print(f"\t\tCost: ${menu['latte']['cost']}")
+        print(f"\t\tCost: ${menu[coffee]['cost']}")
         print()
 
         enough_resources = resources_check(coffee)
@@ -200,15 +200,15 @@ while True:
             enough_money = money_input(coffee)
 
             if enough_money:
-                resources["water"] -= menu["latte"]["ingredients"]["water"]
-                resources["milk"] -= menu["latte"]["ingredients"]["milk"]
-                resources["coffee"] -= menu["latte"]["ingredients"]["coffee"]
+                resources["water"] -= menu[coffee]["ingredients"]["water"]
+                resources["milk"] -= menu[coffee]["ingredients"]["milk"]
+                resources["coffee"] -= menu[coffee]["ingredients"]["coffee"]
 
     elif pick.lower() == "cappuccino" or pick == '3':
         coffee = "cappuccino"
 
         print("\tCappuccino")
-        print(f"\t\tCost: ${menu['cappuccino']['cost']}")
+        print(f"\t\tCost: ${menu[coffee]['cost']}")
         print()
 
         enough_resources = resources_check(coffee)
@@ -217,9 +217,9 @@ while True:
             enough_money = money_input(coffee)
 
             if enough_money:
-                resources["water"] -= menu["cappuccino"]["ingredients"]["water"]
-                resources["milk"] -= menu["cappuccino"]["ingredients"]["milk"]
-                resources["coffee"] -= menu["cappuccino"]["ingredients"]["coffee"]
+                resources["water"] -= menu[coffee]["ingredients"]["water"]
+                resources["milk"] -= menu[coffee]["ingredients"]["milk"]
+                resources["coffee"] -= menu[coffee]["ingredients"]["coffee"]
 
 
     elif pick.lower() == "options" or pick == '4':
