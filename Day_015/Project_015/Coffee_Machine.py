@@ -91,6 +91,8 @@ def ingredients_print(coffee):
 
 def ingredients_check(coffee):
 
+    enough = True
+
     if coffee == "espresso":
 
         if menu['espresso']['ingredients']['water'] < resources['water']:
@@ -120,6 +122,8 @@ def ingredients_check(coffee):
 
         if menu['cappuccino']['ingredients']['coffee'] < resources['coffee']:
             print("\tNot enough coffee")
+
+    return enough
 
 
 while True:
