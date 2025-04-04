@@ -75,3 +75,10 @@ Coffee Machine Program Requirements:
        latte was their choice of drink.
        
 """
+
+if __name__ == "__main__":
+    user_input = input("What would you like? (espresso/latte/cappuccino): ")
+
+    CoffeeMachine = CoffeeMaker()
+    MoneyMachine = MoneyMachine()
+    Menu = Menu()
