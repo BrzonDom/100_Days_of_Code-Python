@@ -140,11 +140,13 @@ while True:
         print("\tEspresso")
         print(f"\t\tCost: ${menu['espresso']['cost']}")
 
-        if menu['espresso']['ingredients']['water'] < resources['water']:
-            print("Not enough water")
+        ingredients_check(coffee)
 
-        if menu['espresso']['ingredients']['coffee'] < resources['coffee']:
-            print("Not enough coffee")
+        # if menu['espresso']['ingredients']['water'] < resources['water']:
+        #     print("Not enough water")
+        #
+        # if menu['espresso']['ingredients']['coffee'] < resources['coffee']:
+        #     print("Not enough coffee")
 
     elif pick.lower() == "latte" or pick == '2':
         coffee = "latte"
@@ -152,14 +154,16 @@ while True:
         print("\tLatte")
         print(f"\t\tCost: ${menu['latte']['cost']}")
 
-        if menu['latte']['ingredients']['water'] < resources['water']:
-            print("Not enough water")
+        ingredients_check(coffee)
 
-        if menu['latte']['ingredients']['milk'] < resources['milk']:
-            print("Not enough milk")
-
-        if menu['latte']['ingredients']['coffee'] < resources['coffee']:
-            print("Not enough coffee")
+        # if menu['latte']['ingredients']['water'] < resources['water']:
+        #     print("Not enough water")
+        #
+        # if menu['latte']['ingredients']['milk'] < resources['milk']:
+        #     print("Not enough milk")
+        #
+        # if menu['latte']['ingredients']['coffee'] < resources['coffee']:
+        #     print("Not enough coffee")
 
     elif pick.lower() == "cappuccino" or pick == '3':
         coffee = "cappuccino"
@@ -167,14 +171,16 @@ while True:
         print("\tCappuccino")
         print(f"\t\tCost: ${menu['cappuccino']['cost']}")
 
-        if menu['cappuccino']['ingredients']['water'] < resources['water']:
-            print("Not enough water")
+        ingredients_check(coffee)
 
-        if menu['cappuccino']['ingredients']['milk'] < resources['milk']:
-            print("Not enough milk")
-
-        if menu['cappuccino']['ingredients']['coffee'] < resources['coffee']:
-            print("Not enough coffee")
+        # if menu['cappuccino']['ingredients']['water'] < resources['water']:
+        #     print("Not enough water")
+        #
+        # if menu['cappuccino']['ingredients']['milk'] < resources['milk']:
+        #     print("Not enough milk")
+        #
+        # if menu['cappuccino']['ingredients']['coffee'] < resources['coffee']:
+        #     print("Not enough coffee")
 
     elif pick.lower() == "options" or pick == '4':
         print("\tOptions:")
