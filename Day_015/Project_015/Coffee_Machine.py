@@ -170,6 +170,11 @@ while True:
             nickel_money = 0.05 * nickel_count
             penny_money = 0.01 * penny_count
 
+            money = quarter_money + dimes_money + nickel_money + penny_money
+
+            if money >= menu[coffee]['cost']:
+                continue
+
     elif pick.lower() == "latte" or pick == '2':
         coffee = "latte"
 
@@ -191,6 +196,11 @@ while True:
             nickel_money = 0.05 * nickel_count
             penny_money = 0.01 * penny_count
 
+            money = quarter_money + dimes_money + nickel_money + penny_money
+
+            if money >= menu[coffee]['cost']:
+                continue
+
     elif pick.lower() == "cappuccino" or pick == '3':
         coffee = "cappuccino"
 
@@ -211,6 +221,11 @@ while True:
             dimes_money = 0.1 * dimes_count
             nickel_money = 0.05 * nickel_count
             penny_money = 0.01 * penny_count
+
+            money = quarter_money + dimes_money + nickel_money + penny_money
+
+            if money >= menu[coffee]['cost']:
+                continue
 
     elif pick.lower() == "options" or pick == '4':
         print("\tOptions:")
