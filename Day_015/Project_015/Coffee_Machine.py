@@ -129,8 +129,13 @@ def resources_check(coffee):
     return enough
 
 
-def money_input():
-    pass
+def money_input(coffee):
+
+    print("Please insert coins")
+    quarter_count = int(input("\tHow many quarters: "))
+    dimes_count = int(input("\tHow many dimes:    "))
+    nickel_count = int(input("\tHow many nickels:  "))
+    penny_count = int(input("\tHow many penny:    "))
 
 
 while True:
