@@ -89,7 +89,7 @@ def ingredients_print(coffee):
         print(f"\t\t\t{ingredient.capitalize()}: {menu[coffee]['ingredients'][ingredient]}")
 
 
-def ingredients_check(coffee):
+def resources_check(coffee):
 
     enough = True
 
@@ -153,7 +153,7 @@ while True:
         print(f"\t\tCost: ${menu['espresso']['cost']}")
         print()
 
-        ingredients_check(coffee)
+        resources_check(coffee)
 
     elif pick.lower() == "latte" or pick == '2':
         coffee = "latte"
@@ -162,7 +162,7 @@ while True:
         print(f"\t\tCost: ${menu['latte']['cost']}")
         print()
 
-        ingredients_check(coffee)
+        resources_check(coffee)
 
     elif pick.lower() == "cappuccino" or pick == '3':
         coffee = "cappuccino"
@@ -171,7 +171,7 @@ while True:
         print(f"\t\tCost: ${menu['cappuccino']['cost']}")
         print()
 
-        ingredients_check(coffee)
+        resources_check(coffee)
 
     elif pick.lower() == "options" or pick == '4':
         print("\tOptions:")
